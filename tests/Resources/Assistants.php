@@ -1,11 +1,11 @@
 <?php
 
-use OpenAI\Responses\Assistants\AssistantDeleteResponse;
-use OpenAI\Responses\Assistants\AssistantListResponse;
-use OpenAI\Responses\Assistants\AssistantResponse;
-use OpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantDeleteResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 test('list', function () {
     $client = mockClient('GET', 'assistants', [], Response::from(assistantListResource(), metaHeaders()));

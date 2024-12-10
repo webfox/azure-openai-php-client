@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Edits;
+namespace Webfox\AzureOpenAI\Responses\Edits;
 
 final class CreateResponseUsage
 {

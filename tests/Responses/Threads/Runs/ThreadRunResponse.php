@@ -1,13 +1,13 @@
 <?php
 
-use OpenAI\Responses\Assistants\AssistantResponseResponseFormat;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponseFileSearch;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponseIncompleteDetails;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunction;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponseUsage;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseResponseFormat;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseFileSearch;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseIncompleteDetails;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunction;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseUsage;
 
 test('from', function () {
     $result = ThreadRunResponse::from(threadRunResource(), meta());

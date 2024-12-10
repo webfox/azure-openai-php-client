@@ -1,6 +1,6 @@
 <?php
 
-use OpenAI\Responses\Edits\CreateResponseUsage;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponseUsage;
 
 test('from', function () {
     $result = CreateResponseUsage::from(edit()['usage']);

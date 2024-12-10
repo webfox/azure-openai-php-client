@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Meta\MetaInformationOpenAI;
-use OpenAI\Responses\Meta\MetaInformationRateLimit;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformationOpenAI;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformationRateLimit;
 
 test('from response headers', function () {
     $meta = MetaInformation::from((new \GuzzleHttp\Psr7\Response(headers: metaHeaders()))->getHeaders());

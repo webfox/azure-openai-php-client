@@ -2,8 +2,8 @@
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
-use OpenAI\Responses\Audio\SpeechStreamResponse;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Audio\SpeechStreamResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from response', function () {
     $response = new Response(

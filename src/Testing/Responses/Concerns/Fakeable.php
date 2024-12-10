@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Testing\Responses\Concerns;
+namespace Webfox\AzureOpenAI\Testing\Responses\Concerns;
 
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 trait Fakeable
 {

@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Threads\ThreadDeleteResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Threads\ThreadDeleteResponse;
 
 test('from', function () {
     $result = ThreadDeleteResponse::from(threadDeleteResource(), meta());

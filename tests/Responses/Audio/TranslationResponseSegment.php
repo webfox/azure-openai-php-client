@@ -1,6 +1,6 @@
 <?php
 
-use OpenAI\Responses\Audio\TranslationResponseSegment;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponseSegment;
 
 test('from', function () {
     $result = TranslationResponseSegment::from(audioTranslationVerboseJson()['segments'][0]);

@@ -1,6 +1,6 @@
 <?php
 
-use OpenAI\Responses\Images\VariationResponseData;
+use Webfox\AzureOpenAI\Responses\Images\VariationResponseData;
 
 test('from with url', function () {
     $response = VariationResponseData::from(imageVariationWithUrl()['data'][0]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Testing\Responses\Fixtures\Threads\Runs\Steps;
+namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Threads\Runs\Steps;
 
 final class ThreadRunStepResponseFixture
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Testing\Responses\Fixtures\Edits;
+namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Edits;
 
 final class CreateResponseFixture
 {

@@ -1,9 +1,9 @@
 <?php
 
-use OpenAI\Resources\Completions;
-use OpenAI\Responses\Completions\CreateResponse;
-use OpenAI\Responses\Completions\CreateStreamedResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Completions;
+use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Completions\CreateStreamedResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a completions create request', function () {
     $fake = new ClientFake([

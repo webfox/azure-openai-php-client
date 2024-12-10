@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Embeddings\CreateResponse;
-use OpenAI\Responses\Embeddings\CreateResponseEmbedding;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponseEmbedding;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = CreateResponse::from(embeddingList(), meta());

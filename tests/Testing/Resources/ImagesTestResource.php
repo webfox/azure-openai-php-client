@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Resources\Images;
-use OpenAI\Responses\Images\CreateResponse;
-use OpenAI\Responses\Images\EditResponse;
-use OpenAI\Responses\Images\VariationResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Images;
+use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Images\EditResponse;
+use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a images create request', function () {
     $fake = new ClientFake([

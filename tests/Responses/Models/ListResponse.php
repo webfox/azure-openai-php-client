@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Models\ListResponse;
-use OpenAI\Responses\Models\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Models\ListResponse;
+use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
 
 test('from', function () {
     $response = ListResponse::from(modelList(), meta());

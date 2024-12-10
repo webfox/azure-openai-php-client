@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Moderations\CreateResponse;
-use OpenAI\Responses\Moderations\CreateResponseResult;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseResult;
 
 test('from', function () {
     $moderation = CreateResponse::from(moderationResource(), meta());

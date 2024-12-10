@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFileCitation;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFileCitationObject;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFileCitation;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFileCitationObject;
 
 test('from', function () {
     $result = ThreadMessageResponseContentTextAnnotationFileCitationObject::from(threadMessageResource()['content'][0]['text']['annotations'][1]);

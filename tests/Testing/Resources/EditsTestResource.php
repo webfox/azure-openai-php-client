@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Resources\Edits;
-use OpenAI\Responses\Edits\CreateResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Edits;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a edits create request', function () {
     $fake = new ClientFake([

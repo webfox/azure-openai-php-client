@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Files\ListResponse;
-use OpenAI\Responses\Files\RetrieveResponse;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Files\ListResponse;
+use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = ListResponse::from(fileListResource(), meta());

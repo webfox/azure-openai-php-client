@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenAI\Responses\Threads\Runs;
+namespace Webfox\AzureOpenAI\Responses\Threads\Runs;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Exceptions\UnknownEventException;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Threads\Messages\Delta\ThreadMessageDeltaResponse;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use OpenAI\Responses\Threads\Runs\Steps\Delta\ThreadRunStepDeltaResponse;
-use OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
-use OpenAI\Responses\Threads\ThreadResponse;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Exceptions\UnknownEventException;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\Delta\ThreadMessageDeltaResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\Delta\ThreadRunStepDeltaResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
+use Webfox\AzureOpenAI\Responses\Threads\ThreadResponse;
 
 /**
  * @implements ResponseContract<array{event: string, data: array<string, mixed>}>

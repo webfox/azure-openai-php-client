@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\EditsContract;
-use OpenAI\Resources\Edits;
-use OpenAI\Responses\Edits\CreateResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\EditsContract;
+use Webfox\AzureOpenAI\Resources\Edits;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class EditsTestResource implements EditsContract
 {

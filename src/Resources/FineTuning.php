@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\FineTuningContract;
-use OpenAI\Responses\FineTuning\ListJobEventsResponse;
-use OpenAI\Responses\FineTuning\ListJobsResponse;
-use OpenAI\Responses\FineTuning\RetrieveJobResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\FineTuningContract;
+use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponse;
+use Webfox\AzureOpenAI\Responses\FineTuning\ListJobsResponse;
+use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class FineTuning implements FineTuningContract
 {

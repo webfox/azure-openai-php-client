@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Enums\Moderations;
+namespace Webfox\AzureOpenAI\Enums\Moderations;
 
 enum Category: string
 {

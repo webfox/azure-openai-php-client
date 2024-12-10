@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAI\Testing\Responses\Fixtures\FineTunes;
+namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\FineTunes;
 
-use OpenAI\Testing\Responses\Fixtures\Files\CreateResponseFixture;
+use Webfox\AzureOpenAI\Testing\Responses\Fixtures\Files\CreateResponseFixture;
 
 final class RetrieveResponseFixture
 {

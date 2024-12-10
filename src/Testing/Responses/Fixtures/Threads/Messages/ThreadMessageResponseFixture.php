@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Testing\Responses\Fixtures\Threads\Messages;
+namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Threads\Messages;
 
 final class ThreadMessageResponseFixture
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Testing\Requests;
+namespace Webfox\AzureOpenAI\Testing\Requests;
 
 final class TestRequest
 {

@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Audio\TranslationResponse;
-use OpenAI\Responses\Audio\TranslationResponseSegment;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponseSegment;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from json', function () {
     $Translation = TranslationResponse::from(audioTranslationJson(), meta());

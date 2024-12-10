@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\FineTunesContract;
-use OpenAI\Responses\FineTunes\ListEventsResponse;
-use OpenAI\Responses\FineTunes\ListResponse;
-use OpenAI\Responses\FineTunes\RetrieveResponse;
-use OpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
-use OpenAI\Responses\StreamResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\FineTunesContract;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
+use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class FineTunes implements FineTunesContract
 {

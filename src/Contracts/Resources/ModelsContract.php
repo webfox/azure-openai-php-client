@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAI\Contracts\Resources;
+namespace Webfox\AzureOpenAI\Contracts\Resources;
 
-use OpenAI\Responses\Models\DeleteResponse;
-use OpenAI\Responses\Models\ListResponse;
-use OpenAI\Responses\Models\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
+use Webfox\AzureOpenAI\Responses\Models\ListResponse;
+use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
 
 interface ModelsContract
 {

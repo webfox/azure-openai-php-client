@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\FineTuning;
+namespace Webfox\AzureOpenAI\Responses\FineTuning;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Enums\FineTuning\FineTuningEventLevel;
-use OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Enums\FineTuning\FineTuningEventLevel;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{object: string, id: string, created_at: int, level: string, message: string, data: array{step: int, train_loss: float, train_mean_token_accuracy: float}|null, type: string}>

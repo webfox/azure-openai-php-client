@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Testing\Responses\Concerns;
+namespace Webfox\AzureOpenAI\Testing\Responses\Concerns;
 
 use Http\Discovery\Psr17FactoryDiscovery;
-use OpenAI\Responses\StreamResponse;
+use Webfox\AzureOpenAI\Responses\StreamResponse;
 
 trait FakeableForStreamedResponse
 {

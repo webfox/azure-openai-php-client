@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Resources\Moderations;
-use OpenAI\Responses\Moderations\CreateResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Moderations;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a moderations create request', function () {
     $fake = new ClientFake([

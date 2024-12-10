@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAI\Contracts\Resources;
+namespace Webfox\AzureOpenAI\Contracts\Resources;
 
-use OpenAI\Responses\Moderations\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponse;
 
 interface ModerationsContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-use OpenAI\Responses\Images\EditResponseData;
+use Webfox\AzureOpenAI\Responses\Images\EditResponseData;
 
 test('from with url', function () {
     $response = EditResponseData::from(imageEditWithUrl()['data'][0]);

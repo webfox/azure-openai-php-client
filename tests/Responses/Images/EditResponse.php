@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Images\EditResponse;
-use OpenAI\Responses\Images\EditResponseData;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Images\EditResponse;
+use Webfox\AzureOpenAI\Responses\Images\EditResponseData;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from with url', function () {
     $response = EditResponse::from(imageEditWithUrl(), meta());

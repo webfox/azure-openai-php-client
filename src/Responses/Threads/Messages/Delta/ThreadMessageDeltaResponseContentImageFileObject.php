@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Threads\Messages\Delta;
+namespace Webfox\AzureOpenAI\Responses\Threads\Messages\Delta;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFile;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFile;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{index: int, type: 'image_file', image_file: array{file_id: string, detail?: string}}>

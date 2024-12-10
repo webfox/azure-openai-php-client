@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Moderations\CreateResponseCategory;
-use OpenAI\Responses\Moderations\CreateResponseResult;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseCategory;
+use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseResult;
 
 test('from', function () {
     $result = CreateResponseResult::from(moderationResource()['results'][0]);

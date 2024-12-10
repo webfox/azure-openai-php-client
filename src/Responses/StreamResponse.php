@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenAI\Responses;
+namespace Webfox\AzureOpenAI\Responses;
 
 use Generator;
-use OpenAI\Contracts\ResponseHasMetaInformationContract;
-use OpenAI\Contracts\ResponseStreamContract;
-use OpenAI\Exceptions\ErrorException;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\AzureOpenAI\Contracts\ResponseStreamContract;
+use Webfox\AzureOpenAI\Exceptions\ErrorException;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 

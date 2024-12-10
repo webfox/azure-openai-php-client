@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\BatchesContract;
-use OpenAI\Resources\Batches;
-use OpenAI\Responses\Batches\BatchListResponse;
-use OpenAI\Responses\Batches\BatchResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\BatchesContract;
+use Webfox\AzureOpenAI\Resources\Batches;
+use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
+use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class BatchesTestResource implements BatchesContract
 {

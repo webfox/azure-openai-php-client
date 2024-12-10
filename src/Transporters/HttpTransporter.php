@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Transporters;
+namespace Webfox\AzureOpenAI\Transporters;
 
 use Closure;
 use GuzzleHttp\Exception\ClientException;
 use JsonException;
-use OpenAI\Contracts\TransporterContract;
-use OpenAI\Enums\Transporter\ContentType;
-use OpenAI\Exceptions\ErrorException;
-use OpenAI\Exceptions\TransporterException;
-use OpenAI\Exceptions\UnserializableResponse;
-use OpenAI\ValueObjects\Transporter\BaseUri;
-use OpenAI\ValueObjects\Transporter\Headers;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\QueryParams;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\TransporterContract;
+use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
+use Webfox\AzureOpenAI\Exceptions\ErrorException;
+use Webfox\AzureOpenAI\Exceptions\TransporterException;
+use Webfox\AzureOpenAI\Exceptions\UnserializableResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\BaseUri;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\QueryParams;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;

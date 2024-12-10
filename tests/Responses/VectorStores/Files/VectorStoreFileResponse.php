@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
-use OpenAI\Responses\VectorStores\Files\VectorStoreFileResponseChunkingStrategyStatic;
+use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileResponseChunkingStrategyStatic;
 
 test('from', function () {
     $result = VectorStoreFileResponse::from(vectorStoreFileResource(), meta());

@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Resources\Assistants;
-use OpenAI\Responses\Assistants\AssistantDeleteResponse;
-use OpenAI\Responses\Assistants\AssistantListResponse;
-use OpenAI\Responses\Assistants\AssistantResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Assistants;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantDeleteResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records an assistant create request', function () {
     $fake = new ClientFake([

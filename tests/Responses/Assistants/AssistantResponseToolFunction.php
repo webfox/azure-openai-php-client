@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Assistants\AssistantResponseToolFunction;
-use OpenAI\Responses\Assistants\AssistantResponseToolFunctionFunction;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolFunction;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolFunctionFunction;
 
 test('from', function () {
     $result = AssistantResponseToolFunction::from(assistantWithFunctionToolResource()['tools'][0]);

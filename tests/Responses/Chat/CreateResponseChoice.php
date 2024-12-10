@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Chat\CreateResponseChoice;
-use OpenAI\Responses\Chat\CreateResponseMessage;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseChoice;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseMessage;
 
 test('from', function () {
     $result = CreateResponseChoice::from(chatCompletion()['choices'][0]);

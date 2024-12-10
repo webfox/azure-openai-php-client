@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Resources\Audio;
-use OpenAI\Responses\Audio\SpeechStreamResponse;
-use OpenAI\Responses\Audio\TranscriptionResponse;
-use OpenAI\Responses\Audio\TranslationResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Audio;
+use Webfox\AzureOpenAI\Responses\Audio\SpeechStreamResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a speech request', function () {
     $fake = new ClientFake([

@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Resources\Models;
-use OpenAI\Responses\Models\DeleteResponse;
-use OpenAI\Responses\Models\ListResponse;
-use OpenAI\Responses\Models\RetrieveResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Models;
+use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
+use Webfox\AzureOpenAI\Responses\Models\ListResponse;
+use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a model retrieve request', function () {
     $fake = new ClientFake([
