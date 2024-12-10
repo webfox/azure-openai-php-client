@@ -1,7 +1,7 @@
 {
     "name": "webfox/azure-openai-php-client",
     "description": "Azure OpenAI PHP is a PHP API client that allows you to interact with the Azure OpenAI API.",
-    "keywords": ["php", "openai", "sdk", "codex", "GPT-3", "DALL-E", "api", "client", "natural", "language", "processing"],
+    "keywords": ["php", "azure", "openai", "sdk", "codex", "GPT-3", "DALL-E", "api", "client", "natural", "language", "processing"],
     "license": "MIT",
     "authors": [
         {
