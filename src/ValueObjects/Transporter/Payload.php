@@ -95,6 +95,7 @@ final class Payload
     {
         if (isset($parameters['deployment'])) {
             $resource = 'deployments/'.$parameters['deployment'].'/'.$resource;
+            unset($parameters['deployment']);
         }
 
         $contentType = ContentType::JSON;
