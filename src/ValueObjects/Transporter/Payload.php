@@ -93,6 +93,10 @@ final class Payload
      */
     public static function create(string $resource, array $parameters): self
     {
+        if (isset($parameters['deployment'])) {
+            $resource = 'deployments/'.$parameters['deployment'].'/'.$resource;
+        }
+
         $contentType = ContentType::JSON;
         $method = Method::POST;
         $uri = ResourceUri::create($resource);
