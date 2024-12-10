@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Files\CreateResponse;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Files\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = CreateResponse::from(fileResource(), meta());

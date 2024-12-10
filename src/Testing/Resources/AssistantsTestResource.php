@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\AssistantsContract;
-use OpenAI\Resources\Assistants;
-use OpenAI\Responses\Assistants\AssistantDeleteResponse;
-use OpenAI\Responses\Assistants\AssistantListResponse;
-use OpenAI\Responses\Assistants\AssistantResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\AssistantsContract;
+use Webfox\AzureOpenAI\Resources\Assistants;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantDeleteResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class AssistantsTestResource implements AssistantsContract
 {

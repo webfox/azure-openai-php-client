@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\FineTunes;
+namespace Webfox\AzureOpenAI\Responses\FineTunes;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Testing\Responses\Concerns\FakeableForStreamedResponse;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\FakeableForStreamedResponse;
 
 /**
  * @implements ResponseContract<array{object: string, created_at: int, level: string, message: string}>

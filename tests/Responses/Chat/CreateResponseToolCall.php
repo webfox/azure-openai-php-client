@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Chat\CreateResponseToolCall;
-use OpenAI\Responses\Chat\CreateResponseToolCallFunction;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseToolCall;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseToolCallFunction;
 
 test('from', function () {
     $result = CreateResponseToolCall::from(chatCompletionWithToolCalls()['choices'][0]['message']['tool_calls'][0]);

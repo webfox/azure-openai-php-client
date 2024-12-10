@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Exceptions;
+namespace Webfox\AzureOpenAI\Exceptions;
 
 use Exception;
 use Psr\Http\Client\ClientExceptionInterface;

@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\FineTunesContract;
-use OpenAI\Resources\FineTunes;
-use OpenAI\Responses\FineTunes\ListEventsResponse;
-use OpenAI\Responses\FineTunes\ListResponse;
-use OpenAI\Responses\FineTunes\RetrieveResponse;
-use OpenAI\Responses\StreamResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\FineTunesContract;
+use Webfox\AzureOpenAI\Resources\FineTunes;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class FineTunesTestResource implements FineTunesContract
 {

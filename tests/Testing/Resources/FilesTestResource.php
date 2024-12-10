@@ -1,11 +1,11 @@
 <?php
 
-use OpenAI\Resources\Files;
-use OpenAI\Responses\Files\CreateResponse;
-use OpenAI\Responses\Files\DeleteResponse;
-use OpenAI\Responses\Files\ListResponse;
-use OpenAI\Responses\Files\RetrieveResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Files;
+use Webfox\AzureOpenAI\Responses\Files\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Files\DeleteResponse;
+use Webfox\AzureOpenAI\Responses\Files\ListResponse;
+use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a files retrieve request', function () {
     $fake = new ClientFake([

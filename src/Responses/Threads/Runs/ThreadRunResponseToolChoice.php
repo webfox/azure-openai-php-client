@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Threads\Runs;
+namespace Webfox\AzureOpenAI\Responses\Threads\Runs;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{type: string, function?: array{name: string}}>
@@ -47,7 +47,7 @@ final class ThreadRunResponseToolChoice implements ResponseContract
             'type' => $this->type,
         ];
 
-        if ($this->function instanceof \OpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoiceFunction) {
+        if ($this->function instanceof \Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoiceFunction) {
             $response['function'] = $this->function->toArray();
         }
 

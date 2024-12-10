@@ -2,19 +2,19 @@
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
-use OpenAI\Exceptions\InvalidArgumentException;
-use OpenAI\Responses\Completions\CreateResponse;
-use OpenAI\Responses\Completions\CreateResponseChoice;
-use OpenAI\Responses\Completions\CreateResponseUsage;
-use OpenAI\Responses\Completions\CreateStreamedResponse;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\StreamResponse;
+use Webfox\AzureOpenAI\Exceptions\InvalidArgumentException;
+use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Completions\CreateResponseChoice;
+use Webfox\AzureOpenAI\Responses\Completions\CreateResponseUsage;
+use Webfox\AzureOpenAI\Responses\Completions\CreateStreamedResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\StreamResponse;
 
 test('create', function () {
     $client = mockClient('POST', 'completions', [
         'model' => 'da-vince',
         'prompt' => 'hi',
-    ], \OpenAI\ValueObjects\Transporter\Response::from(completion(), metaHeaders()));
+    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(completion(), metaHeaders()));
 
     $result = $client->completions()->create([
         'model' => 'da-vince',

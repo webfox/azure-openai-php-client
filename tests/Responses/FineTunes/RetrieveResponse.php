@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Responses\FineTunes\RetrieveResponse;
-use OpenAI\Responses\FineTunes\RetrieveResponseEvent;
-use OpenAI\Responses\FineTunes\RetrieveResponseFile;
-use OpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseEvent;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseFile;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $result = RetrieveResponse::from(fineTuneResource(), meta());

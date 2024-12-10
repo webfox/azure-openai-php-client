@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
-use OpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
+use Webfox\AzureOpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
 
 test('from', function () {
     $result = VectorStoreFileBatchResponse::from(vectorStoreFileBatchResource(), meta());

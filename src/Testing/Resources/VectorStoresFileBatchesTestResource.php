@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
-use OpenAI\Resources\VectorStoresFileBatches;
-use OpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
-use OpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
+use Webfox\AzureOpenAI\Resources\VectorStoresFileBatches;
+use Webfox\AzureOpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class VectorStoresFileBatchesTestResource implements VectorStoresFileBatchesContract
 {

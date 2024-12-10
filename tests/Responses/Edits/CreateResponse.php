@@ -1,9 +1,9 @@
 <?php
 
-use OpenAI\Responses\Edits\CreateResponse;
-use OpenAI\Responses\Edits\CreateResponseChoice;
-use OpenAI\Responses\Edits\CreateResponseUsage;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponseChoice;
+use Webfox\AzureOpenAI\Responses\Edits\CreateResponseUsage;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = CreateResponse::from(edit(), meta());

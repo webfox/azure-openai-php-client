@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\ValueObjects;
+namespace Webfox\AzureOpenAI\ValueObjects;
 
-use OpenAI\Contracts\StringableContract;
+use Webfox\AzureOpenAI\Contracts\StringableContract;
 
 /**
  * @internal

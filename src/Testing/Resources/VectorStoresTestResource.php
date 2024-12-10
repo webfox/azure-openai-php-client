@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\VectorStoresContract;
-use OpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
-use OpenAI\Contracts\Resources\VectorStoresFilesContract;
-use OpenAI\Resources\VectorStores;
-use OpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
-use OpenAI\Responses\VectorStores\VectorStoreListResponse;
-use OpenAI\Responses\VectorStores\VectorStoreResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresContract;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFilesContract;
+use Webfox\AzureOpenAI\Resources\VectorStores;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreListResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class VectorStoresTestResource implements VectorStoresContract
 {

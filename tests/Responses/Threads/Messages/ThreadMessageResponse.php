@@ -1,10 +1,10 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextObject;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextObject;
 
 test('from', function () {
     $result = ThreadMessageResponse::from(threadMessageResource(), meta());
@@ -18,7 +18,7 @@ test('from', function () {
         ->content->toBeArray()
         ->content->{0}->toBeInstanceOf(ThreadMessageResponseContentTextObject::class)
         ->content->{1}->toBeInstanceOf(ThreadMessageResponseContentImageFileObject::class)
-        ->content->{2}->toBeInstanceOf(\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageUrlObject::class)
+        ->content->{2}->toBeInstanceOf(\Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageUrlObject::class)
         ->attachments->toBeArray()
         ->attachments->{0}->toBeInstanceOf(ThreadMessageResponseAttachment::class)
         ->assistantId->toBeNull()

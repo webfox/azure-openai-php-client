@@ -1,9 +1,9 @@
 <?php
 
-use OpenAI\Resources\ThreadsRunsSteps;
-use OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
-use OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\ThreadsRunsSteps;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a thread run step retrieve request', function () {
     $fake = new ClientFake([

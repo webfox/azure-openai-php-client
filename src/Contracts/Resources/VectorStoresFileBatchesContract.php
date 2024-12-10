@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAI\Contracts\Resources;
+namespace Webfox\AzureOpenAI\Contracts\Resources;
 
-use OpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
-use OpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
 
 interface VectorStoresFileBatchesContract
 {

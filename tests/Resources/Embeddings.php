@@ -1,15 +1,15 @@
 <?php
 
-use OpenAI\Responses\Embeddings\CreateResponse;
-use OpenAI\Responses\Embeddings\CreateResponseEmbedding;
-use OpenAI\Responses\Embeddings\CreateResponseUsage;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponseEmbedding;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponseUsage;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('create', function () {
     $client = mockClient('POST', 'embeddings', [
         'model' => 'text-similarity-babbage-001',
         'input' => 'The food was delicious and the waiter...',
-    ], \OpenAI\ValueObjects\Transporter\Response::from(embeddingList(), metaHeaders()));
+    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(embeddingList(), metaHeaders()));
 
     $result = $client->embeddings()->create([
         'model' => 'text-similarity-babbage-001',

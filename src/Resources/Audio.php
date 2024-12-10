@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\AudioContract;
-use OpenAI\Responses\Audio\SpeechStreamResponse;
-use OpenAI\Responses\Audio\TranscriptionResponse;
-use OpenAI\Responses\Audio\TranslationResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\AudioContract;
+use Webfox\AzureOpenAI\Responses\Audio\SpeechStreamResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class Audio implements AudioContract
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Contracts;
+namespace Webfox\AzureOpenAI\Contracts;
 
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 interface ResponseHasMetaInformationContract
 {

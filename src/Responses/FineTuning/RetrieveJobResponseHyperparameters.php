@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\FineTuning;
+namespace Webfox\AzureOpenAI\Responses\FineTuning;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{n_epochs: int|string, batch_size: int|string|null, learning_rate_multiplier: float|string|null}>

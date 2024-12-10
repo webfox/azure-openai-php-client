@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\VectorStoresContract;
-use OpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
-use OpenAI\Contracts\Resources\VectorStoresFilesContract;
-use OpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
-use OpenAI\Responses\VectorStores\VectorStoreListResponse;
-use OpenAI\Responses\VectorStores\VectorStoreResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresContract;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
+use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFilesContract;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreListResponse;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class VectorStores implements VectorStoresContract
 {

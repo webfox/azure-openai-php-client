@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Audio;
+namespace Webfox\AzureOpenAI\Responses\Audio;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{id: int, seek: int, start: float, end: float, text: string, tokens: array<int, int>, temperature: float, avg_logprob: float, compression_ratio: float, no_speech_prob: float, transient?: bool}>

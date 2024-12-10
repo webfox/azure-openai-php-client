@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
-use OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
 
 test('from', function () {
     $response = ThreadRunStepListResponse::from(threadRunStepListResource(), meta());

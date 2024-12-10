@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Files;
+namespace Webfox\AzureOpenAI\Responses\Files;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Contracts\ResponseHasMetaInformationContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Concerns\HasMetaInformation;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{id: string, object: string, created_at: int, bytes: ?int, filename: string, purpose: string, status: string, status_details: array<array-key, mixed>|string|null}>

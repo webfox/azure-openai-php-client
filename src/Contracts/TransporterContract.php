@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Contracts;
+namespace Webfox\AzureOpenAI\Contracts;
 
-use OpenAI\Exceptions\ErrorException;
-use OpenAI\Exceptions\TransporterException;
-use OpenAI\Exceptions\UnserializableResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Exceptions\ErrorException;
+use Webfox\AzureOpenAI\Exceptions\TransporterException;
+use Webfox\AzureOpenAI\Exceptions\UnserializableResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 use Psr\Http\Message\ResponseInterface;
 
 /**

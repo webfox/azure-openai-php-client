@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachmentFileSearchTool;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachmentFileSearchTool;
 
 test('from', function () {
     $result = ThreadMessageResponseAttachment::from(threadMessageResource()['attachments'][0]);

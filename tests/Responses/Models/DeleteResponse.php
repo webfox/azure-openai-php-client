@@ -1,7 +1,7 @@
 <?php
 
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\Models\DeleteResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
 
 test('from', function () {
     $result = DeleteResponse::from(fineTunedModelDeleteResource(), meta());

@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Chat\CreateResponseFunctionCall;
-use OpenAI\Responses\Chat\CreateResponseMessage;
-use OpenAI\Responses\Chat\CreateResponseToolCall;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseFunctionCall;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseMessage;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseToolCall;
 
 test('from', function () {
     $result = CreateResponseMessage::from(chatCompletion()['choices'][0]['message']);

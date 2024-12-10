@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\VectorStores\FileBatches;
+namespace Webfox\AzureOpenAI\Responses\VectorStores\FileBatches;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Contracts\ResponseHasMetaInformationContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Concerns\HasMetaInformation;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{id: string, object: string, created_at: int, vector_store_id: string, status: string, file_counts: array{in_progress: int, completed: int, failed: int, cancelled: int, total: int}}>

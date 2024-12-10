@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Responses\Meta;
+namespace Webfox\AzureOpenAI\Responses\Meta;
 
 final class MetaInformationOpenAI
 {

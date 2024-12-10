@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\ValueObjects\Transporter;
+namespace Webfox\AzureOpenAI\ValueObjects\Transporter;
 
 use Http\Discovery\Psr17Factory;
 use Http\Message\MultipartStream\MultipartStreamBuilder;
-use OpenAI\Contracts\Request;
-use OpenAI\Enums\Transporter\ContentType;
-use OpenAI\Enums\Transporter\Method;
-use OpenAI\ValueObjects\ResourceUri;
+use Webfox\AzureOpenAI\Contracts\Request;
+use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
+use Webfox\AzureOpenAI\Enums\Transporter\Method;
+use Webfox\AzureOpenAI\ValueObjects\ResourceUri;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 

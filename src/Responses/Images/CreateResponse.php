@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Images;
+namespace Webfox\AzureOpenAI\Responses\Images;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Contracts\ResponseHasMetaInformationContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Concerns\HasMetaInformation;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{created: int, data: array<int, array{url?: string, b64_json?: string, revised_prompt?: string}>}>

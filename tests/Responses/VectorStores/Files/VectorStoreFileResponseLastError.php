@@ -1,6 +1,6 @@
 <?php
 
-use OpenAI\Responses\VectorStores\Files\VectorStoreFileResponseLastError;
+use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileResponseLastError;
 
 test('from', function () {
     $result = VectorStoreFileResponseLastError::from(vectorStoreFileWithLastErrorResource()['last_error'], meta());

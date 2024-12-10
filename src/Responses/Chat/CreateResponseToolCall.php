@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Chat;
+namespace Webfox\AzureOpenAI\Responses\Chat;
 
 final class CreateResponseToolCall
 {

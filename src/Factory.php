@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenAI;
+namespace Webfox\AzureOpenAI;
 
 use Closure;
 use Exception;
 use GuzzleHttp\Client as GuzzleClient;
 use Http\Discovery\Psr18ClientDiscovery;
-use OpenAI\Transporters\HttpTransporter;
-use OpenAI\ValueObjects\ApiKey;
-use OpenAI\ValueObjects\Transporter\BaseUri;
-use OpenAI\ValueObjects\Transporter\Headers;
-use OpenAI\ValueObjects\Transporter\QueryParams;
+use Webfox\AzureOpenAI\Transporters\HttpTransporter;
+use Webfox\AzureOpenAI\ValueObjects\ApiKey;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\BaseUri;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\QueryParams;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

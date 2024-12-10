@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Assistants;
+namespace Webfox\AzureOpenAI\Responses\Assistants;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{type: string, function: array{description: ?string, name: string, parameters: array<string, mixed>}}>

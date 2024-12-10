@@ -1,9 +1,9 @@
 <?php
 
-use OpenAI\Resources\Batches;
-use OpenAI\Responses\Batches\BatchListResponse;
-use OpenAI\Responses\Batches\BatchResponse;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\Batches;
+use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
+use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records an batch create request', function () {
     $fake = new ClientFake([

@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\Chat\CreateResponseUsage;
-use OpenAI\Responses\Chat\CreateResponseUsageCompletionTokensDetails;
-use OpenAI\Responses\Chat\CreateResponseUsagePromptTokensDetails;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsage;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsageCompletionTokensDetails;
+use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsagePromptTokensDetails;
 
 test('from', function () {
     $result = CreateResponseUsage::from(chatCompletion()['usage']);

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\ValueObjects\Transporter;
+namespace Webfox\AzureOpenAI\ValueObjects\Transporter;
 
-use OpenAI\Contracts\StringableContract;
+use Webfox\AzureOpenAI\Contracts\StringableContract;
 
 /**
  * @internal

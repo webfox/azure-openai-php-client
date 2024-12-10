@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\ImagesContract;
-use OpenAI\Resources\Images;
-use OpenAI\Responses\Images\CreateResponse;
-use OpenAI\Responses\Images\EditResponse;
-use OpenAI\Responses\Images\VariationResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\ImagesContract;
+use Webfox\AzureOpenAI\Resources\Images;
+use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Images\EditResponse;
+use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class ImagesTestResource implements ImagesContract
 {

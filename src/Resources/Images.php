@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\ImagesContract;
-use OpenAI\Responses\Images\CreateResponse;
-use OpenAI\Responses\Images\EditResponse;
-use OpenAI\Responses\Images\VariationResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\ImagesContract;
+use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
+use Webfox\AzureOpenAI\Responses\Images\EditResponse;
+use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class Images implements ImagesContract
 {

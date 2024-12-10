@@ -1,8 +1,8 @@
 <?php
 
-use OpenAI\Responses\FineTuning\ListJobsResponse;
-use OpenAI\Responses\FineTuning\RetrieveJobResponse;
-use OpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Responses\FineTuning\ListJobsResponse;
+use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = ListJobsResponse::from(fineTuningJobListResource(), meta());

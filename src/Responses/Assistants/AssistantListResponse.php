@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Responses\Assistants;
+namespace Webfox\AzureOpenAI\Responses\Assistants;
 
-use OpenAI\Contracts\ResponseContract;
-use OpenAI\Contracts\ResponseHasMetaInformationContract;
-use OpenAI\Responses\Concerns\ArrayAccessible;
-use OpenAI\Responses\Concerns\HasMetaInformation;
-use OpenAI\Responses\Meta\MetaInformation;
-use OpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\AzureOpenAI\Contracts\ResponseContract;
+use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{object: string, data: array<int, array{id: string, object: string, created_at: int, name: ?string, description: ?string, model: string, instructions: ?string, tools: array<int, array{type: string}|array{type: string}|array{type: string, function: array{description: ?string, name: string, parameters: array<string, mixed>}}>, tool_resources: ?array{code_interpreter?: array{file_ids: array<int,string>}, file_search?: array{vector_store_ids: array<int,string>}}, metadata: array<string, string>, temperature: ?float, top_p: ?float, response_format: string|array{type: string}}>, first_id: ?string, last_id: ?string, has_more: bool}>

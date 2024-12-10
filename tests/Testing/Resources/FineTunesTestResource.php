@@ -1,11 +1,11 @@
 <?php
 
-use OpenAI\Resources\FineTunes;
-use OpenAI\Responses\FineTunes\ListEventsResponse;
-use OpenAI\Responses\FineTunes\ListResponse;
-use OpenAI\Responses\FineTunes\RetrieveResponse;
-use OpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
-use OpenAI\Testing\ClientFake;
+use Webfox\AzureOpenAI\Resources\FineTunes;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
+use Webfox\AzureOpenAI\Testing\ClientFake;
 
 it('records a fine tunes create request', function () {
     $fake = new ClientFake([

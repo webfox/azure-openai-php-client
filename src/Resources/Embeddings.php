@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\EmbeddingsContract;
-use OpenAI\Responses\Embeddings\CreateResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\EmbeddingsContract;
+use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class Embeddings implements EmbeddingsContract
 {

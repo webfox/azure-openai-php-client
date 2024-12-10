@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\ThreadsRunsContract;
-use OpenAI\Contracts\Resources\ThreadsRunsStepsContract;
-use OpenAI\Responses\StreamResponse;
-use OpenAI\Responses\Threads\Runs\ThreadRunListResponse;
-use OpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use OpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\ThreadsRunsContract;
+use Webfox\AzureOpenAI\Contracts\Resources\ThreadsRunsStepsContract;
+use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunListResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class ThreadsRuns implements ThreadsRunsContract
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenAI\Testing\Resources;
+namespace Webfox\AzureOpenAI\Testing\Resources;
 
-use OpenAI\Contracts\Resources\AudioContract;
-use OpenAI\Resources\Audio;
-use OpenAI\Responses\Audio\SpeechStreamResponse;
-use OpenAI\Responses\Audio\TranscriptionResponse;
-use OpenAI\Responses\Audio\TranslationResponse;
-use OpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\AzureOpenAI\Contracts\Resources\AudioContract;
+use Webfox\AzureOpenAI\Resources\Audio;
+use Webfox\AzureOpenAI\Responses\Audio\SpeechStreamResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponse;
+use Webfox\AzureOpenAI\Responses\Audio\TranslationResponse;
+use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
 
 final class AudioTestResource implements AudioContract
 {

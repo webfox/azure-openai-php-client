@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Testing\Responses\Fixtures\Batches;
+namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Batches;
 
 final class BatchResponseFixture
 {

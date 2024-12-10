@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace OpenAI\Resources;
+namespace Webfox\AzureOpenAI\Resources;
 
-use OpenAI\Contracts\Resources\ThreadsMessagesContract;
-use OpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
-use OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\Response;
+use Webfox\AzureOpenAI\Contracts\Resources\ThreadsMessagesContract;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
 
 final class ThreadsMessages implements ThreadsMessagesContract
 {

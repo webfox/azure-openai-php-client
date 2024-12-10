@@ -38,7 +38,7 @@
             "Webfox\\AzureOpenAI\\": "src/"
         },
         "files": [
-            "src/OpenAI.php"
+            "src/AzureOpenAI.php"
         ]
     },
     "autoload-dev": {

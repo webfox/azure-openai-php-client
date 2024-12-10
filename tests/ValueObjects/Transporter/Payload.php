@@ -1,11 +1,11 @@
 <?php
 
-use OpenAI\Enums\Transporter\ContentType;
-use OpenAI\ValueObjects\ApiKey;
-use OpenAI\ValueObjects\Transporter\BaseUri;
-use OpenAI\ValueObjects\Transporter\Headers;
-use OpenAI\ValueObjects\Transporter\Payload;
-use OpenAI\ValueObjects\Transporter\QueryParams;
+use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
+use Webfox\AzureOpenAI\ValueObjects\ApiKey;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\BaseUri;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
+use Webfox\AzureOpenAI\ValueObjects\Transporter\QueryParams;
 
 it('has a method', function () {
     $payload = Payload::create('models', []);

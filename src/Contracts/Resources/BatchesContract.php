@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAI\Contracts\Resources;
+namespace Webfox\AzureOpenAI\Contracts\Resources;
 
-use OpenAI\Responses\Batches\BatchListResponse;
-use OpenAI\Responses\Batches\BatchResponse;
+use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
+use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
 
 interface BatchesContract
 {
