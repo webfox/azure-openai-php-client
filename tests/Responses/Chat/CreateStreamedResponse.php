@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsage;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponseChoice;
+use Webfox\OpenAI\Responses\Chat\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponseChoice;
 
 test('from', function () {
     $completion = CreateStreamedResponse::from(chatCompletionStreamFirstChunk());

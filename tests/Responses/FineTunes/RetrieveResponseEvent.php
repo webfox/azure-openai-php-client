@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseEvent;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseEvent;
 
 test('from', function () {
     $result = RetrieveResponseEvent::from(fineTuneEventResource());

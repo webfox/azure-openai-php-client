@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Audio\SpeechStreamResponse;
-use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponse;
-use Webfox\AzureOpenAI\Responses\Audio\TranslationResponse;
+use Webfox\OpenAI\Responses\Audio\SpeechStreamResponse;
+use Webfox\OpenAI\Responses\Audio\TranscriptionResponse;
+use Webfox\OpenAI\Responses\Audio\TranslationResponse;
 
 interface AudioContract
 {

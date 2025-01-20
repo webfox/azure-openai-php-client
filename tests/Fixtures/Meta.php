@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 function metaHeaders(): array
 {

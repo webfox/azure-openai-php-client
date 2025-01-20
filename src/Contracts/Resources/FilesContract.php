@@ -1,11 +1,11 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Files\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Files\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Files\ListResponse;
-use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
+use Webfox\OpenAI\Responses\Files\CreateResponse;
+use Webfox\OpenAI\Responses\Files\DeleteResponse;
+use Webfox\OpenAI\Responses\Files\ListResponse;
+use Webfox\OpenAI\Responses\Files\RetrieveResponse;
 
 interface FilesContract
 {

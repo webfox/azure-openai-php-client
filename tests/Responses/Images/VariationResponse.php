@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
-use Webfox\AzureOpenAI\Responses\Images\VariationResponseData;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Images\VariationResponse;
+use Webfox\OpenAI\Responses\Images\VariationResponseData;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from with url', function () {
     $response = VariationResponse::from(imageVariationWithUrl(), meta());

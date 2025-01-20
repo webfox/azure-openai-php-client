@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Files\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Files\DeleteResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $result = DeleteResponse::from(fileDeleteResource(), meta());

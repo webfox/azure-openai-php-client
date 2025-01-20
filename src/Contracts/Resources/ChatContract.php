@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
 
 interface ChatContract
 {

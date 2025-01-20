@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
 
 interface ThreadsMessagesContract
 {

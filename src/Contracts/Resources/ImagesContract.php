@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Images\EditResponse;
-use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
+use Webfox\OpenAI\Responses\Images\CreateResponse;
+use Webfox\OpenAI\Responses\Images\EditResponse;
+use Webfox\OpenAI\Responses\Images\VariationResponse;
 
 interface ImagesContract
 {

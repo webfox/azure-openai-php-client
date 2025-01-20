@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = AssistantListResponse::from(assistantListResource(), meta());

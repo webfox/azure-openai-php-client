@@ -1,13 +1,13 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Files\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Files\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Files\ListResponse;
-use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Files\CreateResponse;
+use Webfox\OpenAI\Responses\Files\DeleteResponse;
+use Webfox\OpenAI\Responses\Files\ListResponse;
+use Webfox\OpenAI\Responses\Files\RetrieveResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('list', function () {
-    $client = mockClient('GET', 'files', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fileListResource(), metaHeaders()));
+    $client = mockClient('GET', 'files', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fileListResource(), metaHeaders()));
 
     $result = $client->files()->list();
 
@@ -22,7 +22,7 @@ test('list', function () {
 });
 
 test('retrieve', function () {
-    $client = mockClient('GET', 'files/file-XjGxS3KTG0uNmNOK362iJua3', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fileResource(), metaHeaders()));
+    $client = mockClient('GET', 'files/file-XjGxS3KTG0uNmNOK362iJua3', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fileResource(), metaHeaders()));
 
     $result = $client->files()->retrieve('file-XjGxS3KTG0uNmNOK362iJua3');
 
@@ -51,7 +51,7 @@ test('upload', function () {
     $client = mockClient('POST', 'files', [
         'purpose' => 'fine-tune',
         'file' => fileResourceResource(),
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fileResource(), metaHeaders()), validateParams: false);
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fileResource(), metaHeaders()), validateParams: false);
 
     $result = $client->files()->upload([
         'purpose' => 'fine-tune',
@@ -72,7 +72,7 @@ test('upload', function () {
 });
 
 test('delete', function () {
-    $client = mockClient('DELETE', 'files/file-XjGxS3KTG0uNmNOK362iJua3', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fileDeleteResource(), metaHeaders()));
+    $client = mockClient('DELETE', 'files/file-XjGxS3KTG0uNmNOK362iJua3', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fileDeleteResource(), metaHeaders()));
 
     $result = $client->files()->delete('file-XjGxS3KTG0uNmNOK362iJua3');
 

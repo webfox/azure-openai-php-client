@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseCodeInterpreterOutputImage;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseCodeInterpreterOutputImageImage;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseCodeInterpreterOutputImage;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseCodeInterpreterOutputImageImage;
 
 test('from', function () {
     $result = ThreadRunStepResponseCodeInterpreterOutputImage::from(threadRunStepWithCodeInterpreterOutputResource()['step_details']['tool_calls'][0]['code_interpreter']['outputs'][0]);

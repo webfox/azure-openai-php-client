@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseMessageCreation;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseMessageCreationStepDetails;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseMessageCreation;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseMessageCreationStepDetails;
 
 test('from', function () {
     $result = ThreadRunStepResponseMessageCreationStepDetails::from(threadRunStepResource()['step_details']);

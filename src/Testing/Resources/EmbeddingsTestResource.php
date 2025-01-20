@@ -1,11 +1,11 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\EmbeddingsContract;
-use Webfox\AzureOpenAI\Resources\Embeddings;
-use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\EmbeddingsContract;
+use Webfox\OpenAI\Resources\Embeddings;
+use Webfox\OpenAI\Responses\Embeddings\CreateResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class EmbeddingsTestResource implements EmbeddingsContract
 {

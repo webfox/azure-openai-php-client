@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\FineTuning;
+namespace Webfox\OpenAI\Responses\FineTuning;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{code: string, param: ?string, message: string}>

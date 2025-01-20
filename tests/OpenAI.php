@@ -1,7 +1,7 @@
 <?php
 
 use GuzzleHttp\Client as GuzzleClient;
-use Webfox\AzureOpenAI\Client;
+use Webfox\OpenAI\Client;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

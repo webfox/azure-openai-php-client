@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponseHyperparameters;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponseHyperparameters;
 
 test('from', function () {
     $result = RetrieveJobResponseHyperparameters::from(fineTuningJobRetrieveResource()['hyperparameters']);

@@ -1,13 +1,13 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\FineTuningContract;
-use Webfox\AzureOpenAI\Resources\FineTuning;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\FineTuningContract;
+use Webfox\OpenAI\Resources\FineTuning;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponse;
+use Webfox\OpenAI\Responses\FineTuning\ListJobsResponse;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class FineTuningTestResource implements FineTuningContract
 {

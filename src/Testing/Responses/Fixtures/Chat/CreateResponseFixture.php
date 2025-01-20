@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Chat;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Chat;
 
 final class CreateResponseFixture
 {

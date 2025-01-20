@@ -1,11 +1,11 @@
 <?php
 
-use Webfox\AzureOpenAI\Enums\Moderations\Category;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Moderations\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseCategory;
-use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseResult;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Enums\Moderations\Category;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Moderations\CreateResponse;
+use Webfox\OpenAI\Responses\Moderations\CreateResponseCategory;
+use Webfox\OpenAI\Responses\Moderations\CreateResponseResult;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('create legacy', closure: function () {
     $client = mockClient('POST', 'moderations', [

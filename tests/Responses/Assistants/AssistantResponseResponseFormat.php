@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseResponseFormat;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseResponseFormat;
 
 test('from', function () {
     $result = AssistantResponseResponseFormat::from(assistantWithJsonObjectResponseFormat()['response_format']);

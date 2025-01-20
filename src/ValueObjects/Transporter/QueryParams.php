@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\ValueObjects\Transporter;
+namespace Webfox\OpenAI\ValueObjects\Transporter;
 
 /**
  * @internal

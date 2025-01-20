@@ -1,10 +1,10 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunListResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('list', function () {
     $client = mockClient('GET', 'threads/thread_agvtHUGezjTCt4SKgQg0NJ2Y/runs', [], Response::from(threadRunListResource(), metaHeaders()));

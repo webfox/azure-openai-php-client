@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
 
 test('from', function () {
     $result = AssistantResponseToolCodeInterpreter::from(assistantResource()['tools'][0]);

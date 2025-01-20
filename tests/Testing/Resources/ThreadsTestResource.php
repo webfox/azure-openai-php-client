@@ -1,10 +1,10 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\Threads;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\Threads;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Responses\Threads\ThreadDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\ThreadResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a thread create request', function () {
     $fake = new ClientFake([

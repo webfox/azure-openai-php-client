@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseEvent;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseEvent;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = ListEventsResponse::from(fineTuneListEventsResource(), meta());

@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
 
 test('from', function () {
     $result = VectorStoreDeleteResponse::from(vectorStoreDeleteResource(), meta());

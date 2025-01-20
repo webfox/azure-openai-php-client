@@ -1,11 +1,11 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ModerationsContract;
-use Webfox\AzureOpenAI\Resources\Moderations;
-use Webfox\AzureOpenAI\Responses\Moderations\CreateResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\ModerationsContract;
+use Webfox\OpenAI\Resources\Moderations;
+use Webfox\OpenAI\Responses\Moderations\CreateResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class ModerationsTestResource implements ModerationsContract
 {

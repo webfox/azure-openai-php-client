@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Threads\Runs;
+namespace Webfox\OpenAI\Responses\Threads\Runs;
 
 final class ThreadRunResponseUsage
 {

@@ -1,28 +1,28 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing;
+namespace Webfox\OpenAI\Testing;
 
-use Webfox\AzureOpenAI\Contracts\ClientContract;
-use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresContract;
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Contracts\ResponseStreamContract;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\Testing\Requests\TestRequest;
-use Webfox\AzureOpenAI\Testing\Resources\AssistantsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\AudioTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\BatchesTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\ChatTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\CompletionsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\EditsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\EmbeddingsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\FilesTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\FineTunesTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\FineTuningTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\ImagesTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\ModelsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\ModerationsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\ThreadsTestResource;
-use Webfox\AzureOpenAI\Testing\Resources\VectorStoresTestResource;
+use Webfox\OpenAI\Contracts\ClientContract;
+use Webfox\OpenAI\Contracts\Resources\VectorStoresContract;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Contracts\ResponseStreamContract;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Testing\Requests\TestRequest;
+use Webfox\OpenAI\Testing\Resources\AssistantsTestResource;
+use Webfox\OpenAI\Testing\Resources\AudioTestResource;
+use Webfox\OpenAI\Testing\Resources\BatchesTestResource;
+use Webfox\OpenAI\Testing\Resources\ChatTestResource;
+use Webfox\OpenAI\Testing\Resources\CompletionsTestResource;
+use Webfox\OpenAI\Testing\Resources\EditsTestResource;
+use Webfox\OpenAI\Testing\Resources\EmbeddingsTestResource;
+use Webfox\OpenAI\Testing\Resources\FilesTestResource;
+use Webfox\OpenAI\Testing\Resources\FineTunesTestResource;
+use Webfox\OpenAI\Testing\Resources\FineTuningTestResource;
+use Webfox\OpenAI\Testing\Resources\ImagesTestResource;
+use Webfox\OpenAI\Testing\Resources\ModelsTestResource;
+use Webfox\OpenAI\Testing\Resources\ModerationsTestResource;
+use Webfox\OpenAI\Testing\Resources\ThreadsTestResource;
+use Webfox\OpenAI\Testing\Resources\VectorStoresTestResource;
 use PHPUnit\Framework\Assert as PHPUnit;
 use Throwable;
 

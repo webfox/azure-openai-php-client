@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFile;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFile;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
 
 test('from', function () {
     $result = ThreadMessageResponseContentImageFileObject::from(threadMessageResource()['content'][1]);

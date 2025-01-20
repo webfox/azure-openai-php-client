@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseChoice;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsage;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\Chat\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Chat\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $completion = CreateResponse::from(chatCompletion(), meta());

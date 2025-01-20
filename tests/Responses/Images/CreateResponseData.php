@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Images\CreateResponseData;
+use Webfox\OpenAI\Responses\Images\CreateResponseData;
 
 test('from with url', function () {
     $response = CreateResponseData::from(imageCreateWithUrl()['data'][0]);

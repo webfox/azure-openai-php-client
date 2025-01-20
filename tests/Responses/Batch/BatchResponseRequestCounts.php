@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponseRequestCounts;
+use Webfox\OpenAI\Responses\Batches\BatchResponseRequestCounts;
 
 test('from', function () {
     $response = BatchResponseRequestCounts::from(batchResource()['request_counts']);

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Images;
+namespace Webfox\OpenAI\Responses\Images;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{url: string, revised_prompt?: string}|array{b64_json: string, revised_prompt?: string}>

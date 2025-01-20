@@ -1,11 +1,11 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources\Concerns;
+namespace Webfox\OpenAI\Testing\Resources\Concerns;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Contracts\ResponseStreamContract;
-use Webfox\AzureOpenAI\Testing\ClientFake;
-use Webfox\AzureOpenAI\Testing\Requests\TestRequest;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Contracts\ResponseStreamContract;
+use Webfox\OpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Testing\Requests\TestRequest;
 
 trait Testable
 {

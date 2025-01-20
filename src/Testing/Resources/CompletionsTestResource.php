@@ -1,12 +1,12 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\CompletionsContract;
-use Webfox\AzureOpenAI\Resources\Completions;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\CompletionsContract;
+use Webfox\OpenAI\Resources\Completions;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class CompletionsTestResource implements CompletionsContract
 {

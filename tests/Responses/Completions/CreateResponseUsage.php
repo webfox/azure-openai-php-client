@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Completions\CreateResponseUsage;
 
 test('from', function () {
     $result = CreateResponseUsage::from(completion()['usage']);

@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseChoice;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseUsage;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Responses\Completions\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Completions\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $completion = CreateResponse::from(completion(), meta());

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Audio;
+namespace Webfox\OpenAI\Responses\Audio;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Contracts\ResponseHasMetaInformationContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
-use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Contracts\ResponseHasMetaInformationContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{task: ?string, language: ?string, duration: ?float, segments: array<int, array{id: int, seek: int, start: float, end: float, text: string, tokens: array<int, int>, temperature: float, avg_logprob: float, compression_ratio: float, no_speech_prob: float, transient?: bool}>, text: string}>

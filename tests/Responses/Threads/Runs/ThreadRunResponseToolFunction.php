@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunction;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunctionFunction;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunction;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolFunctionFunction;
 
 test('from', function () {
     $result = ThreadRunResponseToolFunction::from(threadRunWithSubmitToolOutputsResource()['tools'][0]);

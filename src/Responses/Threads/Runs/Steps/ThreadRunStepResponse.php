@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Threads\Runs\Steps;
+namespace Webfox\OpenAI\Responses\Threads\Runs\Steps;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
-use Webfox\AzureOpenAI\Responses\Concerns\HasMetaInformation;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseLastError;
-use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Responses\Concerns\HasMetaInformation;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseLastError;
+use Webfox\OpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{id: string, object: string, created_at: int, thread_id: string, assistant_id: string, run_id: string, type: string, status: string, step_details: array{type: 'tool_calls', tool_calls: array<int, array{id: ?string, type: 'code_interpreter', code_interpreter: array{input?: string, outputs?: array<int, array{type: 'image', image: array{file_id: string}}|array{type: 'logs', logs: string}>}}|array{id: string, type: 'file_search', file_search: array<string, string>}|array{id: ?string, type: 'function', function: array{name: ?string, arguments: string, output: ?string}}>}|array{type: 'message_creation', message_creation: array{message_id: string}}, last_error: ?array{code: string, message: string}, expires_at: ?int, cancelled_at: ?int, failed_at: ?int, completed_at: ?int, metadata?: array<string, string>, usage: ?array{prompt_tokens: int, completion_tokens: int, total_tokens: int}}>

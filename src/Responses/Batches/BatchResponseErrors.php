@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Batches;
+namespace Webfox\OpenAI\Responses\Batches;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
 
 /**
  * @implements ResponseContract<array{object: string, data: array<array-key, array{code: string, message: string, param: ?string, line: ?int}>}>
@@ -35,7 +35,7 @@ final class BatchResponseErrors implements ResponseContract
         return new self(
             $attributes['object'],
             array_map(
-                fn (array $data): \Webfox\AzureOpenAI\Responses\Batches\BatchResponseErrorsData => BatchResponseErrorsData::from($data),
+                fn (array $data): \Webfox\OpenAI\Responses\Batches\BatchResponseErrorsData => BatchResponseErrorsData::from($data),
                 $attributes['data']
             )
         );

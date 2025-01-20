@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\FineTuning;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\FineTuning;
 
 final class ListJobEventsResponseFixture
 {

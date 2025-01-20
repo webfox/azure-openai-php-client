@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponseExpiresAfter;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreResponseExpiresAfter;
 
 test('from', function () {
     $result = VectorStoreResponseExpiresAfter::from(vectorStoreWithExpiresAfterResource()['expires_after']);

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Exceptions;
+namespace Webfox\OpenAI\Exceptions;
 
 use Exception;
 

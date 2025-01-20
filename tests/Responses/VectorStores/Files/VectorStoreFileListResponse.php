@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
 
 test('from', function () {
     $result = VectorStoreFileListResponse::from(vectorStoreFileListResource(), meta());

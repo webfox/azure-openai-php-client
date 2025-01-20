@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\CompletionsContract;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Completions\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\CompletionsContract;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Responses\Completions\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Completions implements CompletionsContract
 {

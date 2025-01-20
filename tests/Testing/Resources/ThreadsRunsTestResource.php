@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\ThreadsRuns;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\ThreadsRuns;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunListResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a thread run create request', function () {
     $fake = new ClientFake([

@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\Embeddings;
-use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\Embeddings;
+use Webfox\OpenAI\Responses\Embeddings\CreateResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a embeddings create request', function () {
     $fake = new ClientFake([

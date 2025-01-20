@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentText;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFilePathObject;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentText;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFilePathObject;
 
 test('from', function () {
     $result = ThreadMessageResponseContentText::from(threadMessageResource()['content'][0]['text']);

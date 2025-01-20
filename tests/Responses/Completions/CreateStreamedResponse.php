@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\Completions\CreateStreamedResponse;
 
 test('fake', function () {
     $response = CreateStreamedResponse::fake();

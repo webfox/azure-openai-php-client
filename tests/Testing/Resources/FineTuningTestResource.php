@@ -1,10 +1,10 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\FineTuning;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\FineTuning;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponse;
+use Webfox\OpenAI\Responses\FineTuning\ListJobsResponse;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a fine tuning job create request', function () {
     $fake = new ClientFake([

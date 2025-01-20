@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsageCompletionTokensDetails;
+use Webfox\OpenAI\Responses\Chat\CreateResponseUsageCompletionTokensDetails;
 
 test('from', function () {
     $result = CreateResponseUsageCompletionTokensDetails::from(chatCompletion()['usage']['completion_tokens_details']);

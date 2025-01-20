@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Chat;
+namespace Webfox\OpenAI\Responses\Chat;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
-use Webfox\AzureOpenAI\Testing\Responses\Concerns\FakeableForStreamedResponse;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Testing\Responses\Concerns\FakeableForStreamedResponse;
 
 /**
  * @implements ResponseContract<array{id?: string, object: string, created: int, model: string, choices: array<int, array{index: int, delta: array{role?: string, content?: string}|array{role?: string, content: null, function_call: array{name?: string, arguments?: string}}, finish_reason: string|null}>, usage?: array{prompt_tokens: int, completion_tokens: int|null, total_tokens: int}}>

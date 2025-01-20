@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsagePromptTokensDetails;
+use Webfox\OpenAI\Responses\Chat\CreateResponseUsagePromptTokensDetails;
 
 test('from', function () {
     $result = CreateResponseUsagePromptTokensDetails::from(chatCompletion()['usage']['prompt_tokens_details']);

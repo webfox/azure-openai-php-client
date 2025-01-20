@@ -1,12 +1,12 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ChatContract;
-use Webfox\AzureOpenAI\Resources\Chat;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\ChatContract;
+use Webfox\OpenAI\Resources\Chat;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class ChatTestResource implements ChatContract
 {

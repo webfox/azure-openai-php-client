@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\FineTunes;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\FineTunes;
 
 final class ListResponseFixture
 {

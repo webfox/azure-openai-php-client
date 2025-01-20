@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Transporters;
+namespace Webfox\OpenAI\Transporters;
 
 use Closure;
 use GuzzleHttp\Exception\ClientException;
 use JsonException;
-use Webfox\AzureOpenAI\Contracts\TransporterContract;
-use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
-use Webfox\AzureOpenAI\Exceptions\ErrorException;
-use Webfox\AzureOpenAI\Exceptions\TransporterException;
-use Webfox\AzureOpenAI\Exceptions\UnserializableResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\BaseUri;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\QueryParams;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\TransporterContract;
+use Webfox\OpenAI\Enums\Transporter\ContentType;
+use Webfox\OpenAI\Exceptions\ErrorException;
+use Webfox\OpenAI\Exceptions\TransporterException;
+use Webfox\OpenAI\Exceptions\UnserializableResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\BaseUri;
+use Webfox\OpenAI\ValueObjects\Transporter\Headers;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\QueryParams;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;

@@ -1,13 +1,13 @@
 <?php
 
-use Webfox\AzureOpenAI\Client;
-use Webfox\AzureOpenAI\Contracts\TransporterContract;
-use Webfox\AzureOpenAI\ValueObjects\ApiKey;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\BaseUri;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\QueryParams;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Client;
+use Webfox\OpenAI\Contracts\TransporterContract;
+use Webfox\OpenAI\ValueObjects\ApiKey;
+use Webfox\OpenAI\ValueObjects\Transporter\BaseUri;
+use Webfox\OpenAI\ValueObjects\Transporter\Headers;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\QueryParams;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 use Psr\Http\Message\ResponseInterface;
 
 function mockClient(string $method, string $resource, array $params, Response|ResponseInterface|string $response, $methodName = 'requestObject', bool $validateParams = true)

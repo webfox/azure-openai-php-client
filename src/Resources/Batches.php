@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\BatchesContract;
-use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\BatchesContract;
+use Webfox\OpenAI\Responses\Batches\BatchListResponse;
+use Webfox\OpenAI\Responses\Batches\BatchResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Batches implements BatchesContract
 {

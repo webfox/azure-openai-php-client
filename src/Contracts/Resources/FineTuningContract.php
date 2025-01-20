@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponse;
+use Webfox\OpenAI\Responses\FineTuning\ListJobsResponse;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponse;
 
 interface FineTuningContract
 {

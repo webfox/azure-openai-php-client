@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\FineTunes\ListResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = ListResponse::from(fineTuneListResource(), meta());

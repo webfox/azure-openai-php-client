@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ModelsContract;
-use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Models\ListResponse;
-use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\ModelsContract;
+use Webfox\OpenAI\Responses\Models\DeleteResponse;
+use Webfox\OpenAI\Responses\Models\ListResponse;
+use Webfox\OpenAI\Responses\Models\RetrieveResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Models implements ModelsContract
 {

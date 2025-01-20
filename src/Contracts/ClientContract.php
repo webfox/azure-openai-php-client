@@ -1,22 +1,22 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts;
+namespace Webfox\OpenAI\Contracts;
 
-use Webfox\AzureOpenAI\Contracts\Resources\AssistantsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\AudioContract;
-use Webfox\AzureOpenAI\Contracts\Resources\BatchesContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ChatContract;
-use Webfox\AzureOpenAI\Contracts\Resources\CompletionsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\EditsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\EmbeddingsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\FilesContract;
-use Webfox\AzureOpenAI\Contracts\Resources\FineTunesContract;
-use Webfox\AzureOpenAI\Contracts\Resources\FineTuningContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ImagesContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ModelsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ModerationsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresContract;
+use Webfox\OpenAI\Contracts\Resources\AssistantsContract;
+use Webfox\OpenAI\Contracts\Resources\AudioContract;
+use Webfox\OpenAI\Contracts\Resources\BatchesContract;
+use Webfox\OpenAI\Contracts\Resources\ChatContract;
+use Webfox\OpenAI\Contracts\Resources\CompletionsContract;
+use Webfox\OpenAI\Contracts\Resources\EditsContract;
+use Webfox\OpenAI\Contracts\Resources\EmbeddingsContract;
+use Webfox\OpenAI\Contracts\Resources\FilesContract;
+use Webfox\OpenAI\Contracts\Resources\FineTunesContract;
+use Webfox\OpenAI\Contracts\Resources\FineTuningContract;
+use Webfox\OpenAI\Contracts\Resources\ImagesContract;
+use Webfox\OpenAI\Contracts\Resources\ModelsContract;
+use Webfox\OpenAI\Contracts\Resources\ModerationsContract;
+use Webfox\OpenAI\Contracts\Resources\ThreadsContract;
+use Webfox\OpenAI\Contracts\Resources\VectorStoresContract;
 
 interface ClientContract
 {

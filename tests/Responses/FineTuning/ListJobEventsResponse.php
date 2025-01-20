@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponseEvent;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponse;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponseEvent;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = ListJobEventsResponse::from(fineTuningJobListEventsResource(), meta());

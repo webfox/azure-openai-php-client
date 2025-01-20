@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\EditsContract;
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\EditsContract;
+use Webfox\OpenAI\Responses\Edits\CreateResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Edits implements EditsContract
 {

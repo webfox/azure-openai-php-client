@@ -1,12 +1,12 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\OpenAI\Responses\FineTunes\ListResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
+use Webfox\OpenAI\Responses\StreamResponse;
 
 interface FineTunesContract
 {

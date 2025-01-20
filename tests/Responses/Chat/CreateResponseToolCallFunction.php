@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseToolCallFunction;
+use Webfox\OpenAI\Responses\Chat\CreateResponseToolCallFunction;
 
 test('from', function () {
     $result = CreateResponseToolCallFunction::from(chatCompletionWithToolCalls()['choices'][0]['message']['tool_calls'][0]['function']);

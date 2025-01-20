@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Assistants;
+namespace Webfox\OpenAI\Responses\Assistants;
 
-use Webfox\AzureOpenAI\Contracts\ResponseContract;
-use Webfox\AzureOpenAI\Responses\Concerns\ArrayAccessible;
-use Webfox\AzureOpenAI\Testing\Responses\Concerns\Fakeable;
+use Webfox\OpenAI\Contracts\ResponseContract;
+use Webfox\OpenAI\Responses\Concerns\ArrayAccessible;
+use Webfox\OpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
  * @implements ResponseContract<array{type: string}>

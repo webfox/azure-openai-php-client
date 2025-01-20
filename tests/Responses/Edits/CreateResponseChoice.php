@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Edits\CreateResponseChoice;
 
 test('from', function () {
     $result = CreateResponseChoice::from(edit()['choices'][0]);

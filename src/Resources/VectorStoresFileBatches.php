@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
-use Webfox\AzureOpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\VectorStoresFileBatchesContract;
+use Webfox\OpenAI\Responses\VectorStores\FileBatches\VectorStoreFileBatchResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class VectorStoresFileBatches implements VectorStoresFileBatchesContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Responses\Batches\BatchListResponse;
+use Webfox\OpenAI\Responses\Batches\BatchResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('list', function () {
     $client = mockClient('GET', 'batches', [], Response::from(batchListResource(), metaHeaders()));
@@ -44,7 +44,7 @@ test('create', function () {
         ->errors->toBeNull()
         ->status->toBe('completed')
         ->completionWindow->toBe('24h')
-        ->requestCounts->toBeInstanceOf(\Webfox\AzureOpenAI\Responses\Batches\BatchResponseRequestCounts::class)
+        ->requestCounts->toBeInstanceOf(\Webfox\OpenAI\Responses\Batches\BatchResponseRequestCounts::class)
         ->requestCounts->total->toBe(100)
         ->metadata->toBeArray()->toHaveCount(2);
 
@@ -65,7 +65,7 @@ test('retrieve', function () {
         ->errors->toBeNull()
         ->status->toBe('completed')
         ->completionWindow->toBe('24h')
-        ->requestCounts->toBeInstanceOf(\Webfox\AzureOpenAI\Responses\Batches\BatchResponseRequestCounts::class)
+        ->requestCounts->toBeInstanceOf(\Webfox\OpenAI\Responses\Batches\BatchResponseRequestCounts::class)
         ->requestCounts->total->toBe(100)
         ->metadata->toBeArray()->toHaveCount(2);
 
@@ -86,7 +86,7 @@ test('cancel', function () {
         ->errors->toBeNull()
         ->status->toBe('completed')
         ->completionWindow->toBe('24h')
-        ->requestCounts->toBeInstanceOf(\Webfox\AzureOpenAI\Responses\Batches\BatchResponseRequestCounts::class)
+        ->requestCounts->toBeInstanceOf(\Webfox\OpenAI\Responses\Batches\BatchResponseRequestCounts::class)
         ->requestCounts->total->toBe(100)
         ->metadata->toBeArray()->toHaveCount(2);
 

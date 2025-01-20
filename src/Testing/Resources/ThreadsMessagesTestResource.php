@@ -1,13 +1,13 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsMessagesContract;
-use Webfox\AzureOpenAI\Resources\ThreadsMessages;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\ThreadsMessagesContract;
+use Webfox\OpenAI\Resources\ThreadsMessages;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class ThreadsMessagesTestResource implements ThreadsMessagesContract
 {

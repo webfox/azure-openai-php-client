@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredActionFunctionToolCallFunction;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredActionFunctionToolCallFunction;
 
 test('from', function () {
     $result = ThreadRunResponseRequiredActionFunctionToolCallFunction::from(threadRunWithSubmitToolOutputsResource()['required_action']['submit_tool_outputs']['tool_calls'][0]['function']);

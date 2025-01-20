@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
 
 test('fake', function () {
     $response = RetrieveStreamedResponseEvent::fake();

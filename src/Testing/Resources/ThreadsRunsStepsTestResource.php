@@ -1,12 +1,12 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsRunsStepsContract;
-use Webfox\AzureOpenAI\Resources\ThreadsRunsSteps;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\ThreadsRunsStepsContract;
+use Webfox\OpenAI\Resources\ThreadsRunsSteps;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 class ThreadsRunsStepsTestResource implements ThreadsRunsStepsContract
 {

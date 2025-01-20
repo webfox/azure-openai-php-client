@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\ValueObjects\Transporter;
+namespace Webfox\OpenAI\ValueObjects\Transporter;
 
-use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
-use Webfox\AzureOpenAI\ValueObjects\ApiKey;
+use Webfox\OpenAI\Enums\Transporter\ContentType;
+use Webfox\OpenAI\ValueObjects\ApiKey;
 
 /**
  * @internal

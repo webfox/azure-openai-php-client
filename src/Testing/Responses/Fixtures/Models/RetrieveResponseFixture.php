@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Models;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Models;
 
 final class RetrieveResponseFixture
 {

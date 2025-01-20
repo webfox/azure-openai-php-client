@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Enums\Moderations\Category;
-use Webfox\AzureOpenAI\Responses\Moderations\CreateResponseCategory;
+use Webfox\OpenAI\Enums\Moderations\Category;
+use Webfox\OpenAI\Responses\Moderations\CreateResponseCategory;
 
 test('from', function () {
     $category = CreateResponseCategory::from([

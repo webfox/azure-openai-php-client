@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Completions;
+namespace Webfox\OpenAI\Responses\Completions;
 
 final class CreateResponseChoiceLogprobs
 {

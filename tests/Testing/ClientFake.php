@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\Completions;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\Completions;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 use PHPUnit\Framework\ExpectationFailedException;
 
 it('returns a fake response', function () {
@@ -50,7 +50,7 @@ it('returns fake meta data', function () {
 
 it('throws fake exceptions', function () {
     $fake = new ClientFake([
-        new \Webfox\AzureOpenAI\Exceptions\ErrorException([
+        new \Webfox\OpenAI\Exceptions\ErrorException([
             'message' => 'The model `gpt-1` does not exist',
             'type' => 'invalid_request_error',
             'code' => null,

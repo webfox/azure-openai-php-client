@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
 
 test('from', function () {
     $result = ThreadRunResponseToolCodeInterpreter::from(threadRunResource()['tools'][0]);

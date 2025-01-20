@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachmentCodeInterpreterTool;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachmentCodeInterpreterTool;
 
 test('from', function () {
     $result = ThreadMessageResponseAttachmentCodeInterpreterTool::from(threadMessageResource()['attachments'][0]['tools'][1]);

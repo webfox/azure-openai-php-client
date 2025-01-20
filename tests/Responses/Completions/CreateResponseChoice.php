@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseChoice;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseChoiceLogprobs;
+use Webfox\OpenAI\Responses\Completions\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Completions\CreateResponseChoiceLogprobs;
 
 test('from', function () {
     $result = CreateResponseChoice::from(completion()['choices'][0]);

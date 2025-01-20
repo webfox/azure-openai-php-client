@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponseErrorsData;
+use Webfox\OpenAI\Responses\Batches\BatchResponseErrorsData;
 
 test('from', function () {
     $response = BatchResponseErrorsData::from(batchResourceWithErrors()['errors']['data'][0]);

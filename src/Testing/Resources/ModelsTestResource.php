@@ -1,13 +1,13 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ModelsContract;
-use Webfox\AzureOpenAI\Resources\Models;
-use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Models\ListResponse;
-use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\ModelsContract;
+use Webfox\OpenAI\Resources\Models;
+use Webfox\OpenAI\Responses\Models\DeleteResponse;
+use Webfox\OpenAI\Responses\Models\ListResponse;
+use Webfox\OpenAI\Responses\Models\RetrieveResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class ModelsTestResource implements ModelsContract
 {

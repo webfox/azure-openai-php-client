@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseFunction;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponseFunction;
 
 test('from', function () {
     $result = ThreadRunStepResponseFunction::from(threadRunStepWithCodeInterpreterOutputResource()['step_details']['tool_calls'][1]['function']);

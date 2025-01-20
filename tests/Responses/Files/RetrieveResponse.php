@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Files\RetrieveResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $result = RetrieveResponse::from(fileResource(), meta());

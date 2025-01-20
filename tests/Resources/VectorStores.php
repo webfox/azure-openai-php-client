@@ -1,11 +1,11 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreListResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreDeleteResponse;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreListResponse;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreResponse;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('create', function () {
     $client = mockClient('POST', 'vector_stores', [], Response::from(vectorStoreResource(), metaHeaders()));

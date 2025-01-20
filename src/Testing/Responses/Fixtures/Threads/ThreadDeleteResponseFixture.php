@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Threads;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Threads;
 
 final class ThreadDeleteResponseFixture
 {

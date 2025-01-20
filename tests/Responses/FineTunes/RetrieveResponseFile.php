@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseFile;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseFile;
 
 test('from', function () {
     $result = RetrieveResponseFile::from(fileResource());

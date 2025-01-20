@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Contracts;
+namespace Webfox\OpenAI\Contracts;
 
 /**
  * @internal

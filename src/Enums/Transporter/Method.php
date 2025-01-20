@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Enums\Transporter;
+namespace Webfox\OpenAI\Enums\Transporter;
 
 /**
  * @internal

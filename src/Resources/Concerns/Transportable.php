@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources\Concerns;
+namespace Webfox\OpenAI\Resources\Concerns;
 
-use Webfox\AzureOpenAI\Contracts\TransporterContract;
+use Webfox\OpenAI\Contracts\TransporterContract;
 
 trait Transportable
 {

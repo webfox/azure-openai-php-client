@@ -1,9 +1,9 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepListResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\Steps\ThreadRunStepResponse;
 
 interface ThreadsRunsStepsContract
 {

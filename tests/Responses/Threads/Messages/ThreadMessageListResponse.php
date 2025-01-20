@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
 
 test('from', function () {
     $response = ThreadMessageListResponse::from(threadMessageListResource(), meta());

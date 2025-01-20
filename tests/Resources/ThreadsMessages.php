@@ -1,13 +1,13 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextObject;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseAttachment;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageFileObject;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextObject;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('list', function () {
     $client = mockClient('GET', 'threads/thread_agvtHUGezjTCt4SKgQg0NJ2Y/messages', [], Response::from(threadMessageListResource(), metaHeaders()));

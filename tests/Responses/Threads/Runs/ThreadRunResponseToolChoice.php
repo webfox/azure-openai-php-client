@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoice;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoiceFunction;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoice;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolChoiceFunction;
 
 test('from', function () {
     $result = ThreadRunResponseToolChoice::from(threadRunWithToolChoiceFunction()['tool_choice']);

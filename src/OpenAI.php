@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Webfox\AzureOpenAI\Client;
-use Webfox\AzureOpenAI\Factory;
+use Webfox\OpenAI\Client;
+use Webfox\OpenAI\Factory;
 
-final class AzureOpenAI
+final class OpenAI
 {
     /**
      * Creates a new Open AI Client with the given API token.

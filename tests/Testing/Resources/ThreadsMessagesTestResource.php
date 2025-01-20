@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\ThreadsMessages;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\ThreadsMessages;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageListResponse;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a thread message create request', function () {
     $fake = new ClientFake([
@@ -67,7 +67,7 @@ it('records a thread message modify request', function () {
 
 it('records a thread message delete request', function () {
     $fake = new ClientFake([
-        \Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse::fake(),
+        \Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageDeleteResponse::fake(),
     ]);
 
     $fake->threads()->messages()->delete('thread_tKFLqzRN9n7MnyKKvc1Q7868', 'msg_KNsDDwE41BUAHhcPNpDkdHWZ');

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ChatContract;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\ChatContract;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Chat implements ChatContract
 {

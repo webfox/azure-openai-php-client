@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolFileSearch;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseToolFileSearch;
 
 test('from', function () {
     $result = AssistantResponseToolFileSearch::from(assistantWithToolResources()['tools'][0]);

@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Images\CreateResponseData;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Images\CreateResponse;
+use Webfox\OpenAI\Responses\Images\CreateResponseData;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from with url', function () {
     $response = CreateResponse::from(imageCreateWithUrl(), meta());

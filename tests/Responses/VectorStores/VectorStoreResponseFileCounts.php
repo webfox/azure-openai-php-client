@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
+use Webfox\OpenAI\Responses\VectorStores\VectorStoreResponseFileCounts;
 
 test('from', function () {
     $result = VectorStoreResponseFileCounts::from(vectorStoreResource()['file_counts']);

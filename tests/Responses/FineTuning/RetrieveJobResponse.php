@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponse;
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponseHyperparameters;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponse;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponseHyperparameters;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from create response', function () {
     $result = RetrieveJobResponse::from(fineTuningJobCreateResource(), meta());

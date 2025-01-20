@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Completions\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Responses\Completions\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
 
 interface CompletionsContract
 {

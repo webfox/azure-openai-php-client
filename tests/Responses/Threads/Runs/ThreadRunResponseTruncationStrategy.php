@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseTruncationStrategy;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseTruncationStrategy;
 
 test('from', function () {
     $result = ThreadRunResponseTruncationStrategy::from(threadRunResource()['truncation_strategy']);

@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchListResponse;
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Batches\BatchListResponse;
+use Webfox\OpenAI\Responses\Batches\BatchResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $response = BatchListResponse::from(batchListResource(), meta());

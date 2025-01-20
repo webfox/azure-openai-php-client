@@ -1,14 +1,14 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Resources;
+namespace Webfox\OpenAI\Testing\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\FilesContract;
-use Webfox\AzureOpenAI\Resources\Files;
-use Webfox\AzureOpenAI\Responses\Files\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Files\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Files\ListResponse;
-use Webfox\AzureOpenAI\Responses\Files\RetrieveResponse;
-use Webfox\AzureOpenAI\Testing\Resources\Concerns\Testable;
+use Webfox\OpenAI\Contracts\Resources\FilesContract;
+use Webfox\OpenAI\Resources\Files;
+use Webfox\OpenAI\Responses\Files\CreateResponse;
+use Webfox\OpenAI\Responses\Files\DeleteResponse;
+use Webfox\OpenAI\Responses\Files\ListResponse;
+use Webfox\OpenAI\Responses\Files\RetrieveResponse;
+use Webfox\OpenAI\Testing\Resources\Concerns\Testable;
 
 final class FilesTestResource implements FilesContract
 {

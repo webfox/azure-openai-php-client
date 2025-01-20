@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Audio;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Audio;
 
 final class TranslationResponseFixture
 {

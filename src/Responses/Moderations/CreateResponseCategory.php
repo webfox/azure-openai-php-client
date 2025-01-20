@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Moderations;
+namespace Webfox\OpenAI\Responses\Moderations;
 
-use Webfox\AzureOpenAI\Enums\Moderations\Category;
+use Webfox\OpenAI\Enums\Moderations\Category;
 
 final class CreateResponseCategory
 {

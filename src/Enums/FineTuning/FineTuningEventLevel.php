@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Enums\FineTuning;
+namespace Webfox\OpenAI\Enums\FineTuning;
 
 enum FineTuningEventLevel: string
 {

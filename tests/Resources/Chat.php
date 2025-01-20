@@ -2,19 +2,19 @@
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseChoice;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponseUsage;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponseChoice;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\Chat\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Chat\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponseChoice;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\StreamResponse;
 
 test('create', function () {
     $client = mockClient('POST', 'chat/completions', [
         'model' => 'gpt-3.5-turbo',
         'messages' => ['role' => 'user', 'content' => 'Hello!'],
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(chatCompletion(), metaHeaders()));
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(chatCompletion(), metaHeaders()));
 
     $result = $client->chat()->create([
         'model' => 'gpt-3.5-turbo',

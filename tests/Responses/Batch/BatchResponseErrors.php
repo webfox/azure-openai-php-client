@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponseErrors;
+use Webfox\OpenAI\Responses\Batches\BatchResponseErrors;
 
 test('from', function () {
     $response = BatchResponseErrors::from(batchResourceWithErrors()['errors']);
@@ -9,7 +9,7 @@ test('from', function () {
         ->toBeInstanceOf(BatchResponseErrors::class)
         ->object->toBe('list')
         ->data->toBeArray()
-        ->data->each->toBeInstanceOf(\Webfox\AzureOpenAI\Responses\Batches\BatchResponseErrorsData::class)
+        ->data->each->toBeInstanceOf(\Webfox\OpenAI\Responses\Batches\BatchResponseErrorsData::class)
         ->data->{0}->code->toBe('123');
 });
 

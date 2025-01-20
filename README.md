@@ -2298,8 +2298,8 @@ The fake responses are returned in the order they are provided while creating th
 All responses are having a `fake()` method that allows you to easily create a response object by only providing the parameters relevant for your test case.
 
 ```php
-use Webfox\AzureOpenAI\Testing\ClientFake;
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponse;
+use Webfox\OpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Responses\Completions\CreateResponse;
 
 $client = new ClientFake([
     CreateResponse::fake([
@@ -2322,8 +2322,8 @@ expect($completion['choices'][0]['text'])->toBe('awesome!');
 In case of a streamed response you can optionally provide a resource holding the fake response data.
 
 ```php
-use Webfox\AzureOpenAI\Testing\ClientFake;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
 
 $client = new ClientFake([
     CreateStreamedResponse::fake(fopen('file.txt', 'r'););
@@ -2370,7 +2370,7 @@ To write tests expecting the API request to fail you can provide a `Throwable` o
 
 ```php
 $client = new ClientFake([
-    new \Webfox\AzureOpenAI\Exceptions\ErrorException([
+    new \Webfox\OpenAI\Exceptions\ErrorException([
         'message' => 'The model `gpt-1` does not exist',
         'type' => 'invalid_request_error',
         'code' => null,

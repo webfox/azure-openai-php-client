@@ -1,8 +1,8 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
+use Webfox\OpenAI\Responses\Edits\CreateResponse;
 
 interface EditsContract
 {

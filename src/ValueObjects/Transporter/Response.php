@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\ValueObjects\Transporter;
+namespace Webfox\OpenAI\ValueObjects\Transporter;
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 /**
  * @template-covariant TData of array|string

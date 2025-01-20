@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Completions\CreateResponseChoiceLogprobs;
+use Webfox\OpenAI\Responses\Completions\CreateResponseChoiceLogprobs;
 
 test('from', function () {
     $result = CreateResponseChoiceLogprobs::from(completionWithLogprobs()['choices'][0]['logprobs']);

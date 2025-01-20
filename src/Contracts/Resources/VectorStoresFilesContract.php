@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileDeleteResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
-use Webfox\AzureOpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileDeleteResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileListResponse;
+use Webfox\OpenAI\Responses\VectorStores\Files\VectorStoreFileResponse;
 
 interface VectorStoresFilesContract
 {

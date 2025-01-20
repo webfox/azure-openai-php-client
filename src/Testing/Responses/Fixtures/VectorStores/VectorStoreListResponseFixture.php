@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\VectorStores;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\VectorStores;
 
 final class VectorStoreListResponseFixture
 {

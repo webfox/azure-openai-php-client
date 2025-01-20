@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponse;
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponseErrors;
-use Webfox\AzureOpenAI\Responses\Batches\BatchResponseRequestCounts;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Batches\BatchResponse;
+use Webfox\OpenAI\Responses\Batches\BatchResponseErrors;
+use Webfox\OpenAI\Responses\Batches\BatchResponseRequestCounts;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $result = BatchResponse::from(batchResource(), meta());

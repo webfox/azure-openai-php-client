@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\Chat;
-use Webfox\AzureOpenAI\Responses\Chat\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponse;
-use Webfox\AzureOpenAI\Testing\ClientFake;
+use Webfox\OpenAI\Resources\Chat;
+use Webfox\OpenAI\Responses\Chat\CreateResponse;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponse;
+use Webfox\OpenAI\Testing\ClientFake;
 
 it('records a chat create request', function () {
     $fake = new ClientFake([

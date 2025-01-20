@@ -1,16 +1,16 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponseChoice;
-use Webfox\AzureOpenAI\Responses\Edits\CreateResponseUsage;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Edits\CreateResponse;
+use Webfox\OpenAI\Responses\Edits\CreateResponseChoice;
+use Webfox\OpenAI\Responses\Edits\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('create', function () {
     $client = mockClient('POST', 'edits', [
         'model' => 'text-davinci-edit-001',
         'input' => 'What day of the wek is it?',
         'instruction' => 'Fix the spelling mistakes',
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(edit(), metaHeaders()));
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(edit(), metaHeaders()));
 
     $result = $client->edits()->create([
         'model' => 'text-davinci-edit-001',

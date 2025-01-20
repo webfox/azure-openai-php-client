@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseUsage;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseUsage;
 
 test('from', function () {
     $result = ThreadRunResponseUsage::from(threadRunWithUsageResource()['usage']);

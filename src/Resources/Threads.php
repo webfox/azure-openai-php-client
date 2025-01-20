@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsMessagesContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsRunsContract;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\ThreadsContract;
+use Webfox\OpenAI\Contracts\Resources\ThreadsMessagesContract;
+use Webfox\OpenAI\Contracts\Resources\ThreadsRunsContract;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
+use Webfox\OpenAI\Responses\Threads\ThreadDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\ThreadResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Threads implements ThreadsContract
 {

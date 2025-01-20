@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI;
+namespace Webfox\OpenAI;
 
-use Webfox\AzureOpenAI\Contracts\ClientContract;
-use Webfox\AzureOpenAI\Contracts\Resources\ThreadsContract;
-use Webfox\AzureOpenAI\Contracts\Resources\VectorStoresContract;
-use Webfox\AzureOpenAI\Contracts\TransporterContract;
-use Webfox\AzureOpenAI\Resources\Assistants;
-use Webfox\AzureOpenAI\Resources\Audio;
-use Webfox\AzureOpenAI\Resources\Batches;
-use Webfox\AzureOpenAI\Resources\Chat;
-use Webfox\AzureOpenAI\Resources\Completions;
-use Webfox\AzureOpenAI\Resources\Edits;
-use Webfox\AzureOpenAI\Resources\Embeddings;
-use Webfox\AzureOpenAI\Resources\Files;
-use Webfox\AzureOpenAI\Resources\FineTunes;
-use Webfox\AzureOpenAI\Resources\FineTuning;
-use Webfox\AzureOpenAI\Resources\Images;
-use Webfox\AzureOpenAI\Resources\Models;
-use Webfox\AzureOpenAI\Resources\Moderations;
-use Webfox\AzureOpenAI\Resources\Threads;
-use Webfox\AzureOpenAI\Resources\VectorStores;
+use Webfox\OpenAI\Contracts\ClientContract;
+use Webfox\OpenAI\Contracts\Resources\ThreadsContract;
+use Webfox\OpenAI\Contracts\Resources\VectorStoresContract;
+use Webfox\OpenAI\Contracts\TransporterContract;
+use Webfox\OpenAI\Resources\Assistants;
+use Webfox\OpenAI\Resources\Audio;
+use Webfox\OpenAI\Resources\Batches;
+use Webfox\OpenAI\Resources\Chat;
+use Webfox\OpenAI\Resources\Completions;
+use Webfox\OpenAI\Resources\Edits;
+use Webfox\OpenAI\Resources\Embeddings;
+use Webfox\OpenAI\Resources\Files;
+use Webfox\OpenAI\Resources\FineTunes;
+use Webfox\OpenAI\Resources\FineTuning;
+use Webfox\OpenAI\Resources\Images;
+use Webfox\OpenAI\Resources\Models;
+use Webfox\OpenAI\Resources\Moderations;
+use Webfox\OpenAI\Resources\Threads;
+use Webfox\OpenAI\Resources\VectorStores;
 
 final class Client implements ClientContract
 {

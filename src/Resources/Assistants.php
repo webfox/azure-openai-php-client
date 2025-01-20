@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Resources;
+namespace Webfox\OpenAI\Resources;
 
-use Webfox\AzureOpenAI\Contracts\Resources\AssistantsContract;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Payload;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Contracts\Resources\AssistantsContract;
+use Webfox\OpenAI\Responses\Assistants\AssistantDeleteResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Payload;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 final class Assistants implements AssistantsContract
 {

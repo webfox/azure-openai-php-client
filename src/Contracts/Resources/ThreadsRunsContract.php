@@ -1,11 +1,11 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\StreamResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunListResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
+use Webfox\OpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunListResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunStreamResponse;
 
 interface ThreadsRunsContract
 {

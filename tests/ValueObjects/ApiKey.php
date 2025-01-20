@@ -2,7 +2,7 @@
 
 // Generate test for API key value object...
 
-use Webfox\AzureOpenAI\ValueObjects\ApiKey;
+use Webfox\OpenAI\ValueObjects\ApiKey;
 
 it('can be created from a string', function () {
     $apiKey = ApiKey::from('foo');

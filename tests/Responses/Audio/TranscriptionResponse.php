@@ -1,9 +1,9 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponse;
-use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponseSegment;
-use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponseWord;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Audio\TranscriptionResponse;
+use Webfox\OpenAI\Responses\Audio\TranscriptionResponseSegment;
+use Webfox\OpenAI\Responses\Audio\TranscriptionResponseWord;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from json', function () {
     $transcription = TranscriptionResponse::from(audioTranscriptionJson(), meta());

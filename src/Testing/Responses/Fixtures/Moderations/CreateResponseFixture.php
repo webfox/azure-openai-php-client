@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Moderations;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Moderations;
 
 final class CreateResponseFixture
 {

@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponseDelta;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponseFunctionCall;
-use Webfox\AzureOpenAI\Responses\Chat\CreateStreamedResponseToolCall;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponseDelta;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponseFunctionCall;
+use Webfox\OpenAI\Responses\Chat\CreateStreamedResponseToolCall;
 
 test('from first chunk', function () {
     $result = CreateStreamedResponseDelta::from(chatCompletionStreamFirstChunk()['choices'][0]['delta']);

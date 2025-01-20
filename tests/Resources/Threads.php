@@ -1,11 +1,11 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponse;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Threads\ThreadResponse;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Response;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponse;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseToolCodeInterpreter;
+use Webfox\OpenAI\Responses\Threads\ThreadDeleteResponse;
+use Webfox\OpenAI\Responses\Threads\ThreadResponse;
+use Webfox\OpenAI\ValueObjects\Transporter\Response;
 
 test('create', function () {
     $client = mockClient('POST', 'threads', [], Response::from(threadResource(), metaHeaders()));

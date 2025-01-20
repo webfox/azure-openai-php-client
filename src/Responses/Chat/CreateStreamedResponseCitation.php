@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Chat;
+namespace Webfox\OpenAI\Responses\Chat;
 
 final class CreateStreamedResponseCitation
 {

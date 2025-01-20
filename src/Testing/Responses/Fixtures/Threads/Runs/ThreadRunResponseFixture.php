@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Threads\Runs;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Threads\Runs;
 
 final class ThreadRunResponseFixture
 {

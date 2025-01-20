@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Enums\Transporter\ContentType;
-use Webfox\AzureOpenAI\ValueObjects\ApiKey;
-use Webfox\AzureOpenAI\ValueObjects\Transporter\Headers;
+use Webfox\OpenAI\Enums\Transporter\ContentType;
+use Webfox\OpenAI\ValueObjects\ApiKey;
+use Webfox\OpenAI\ValueObjects\Transporter\Headers;
 
 it('can be created from an API Token', function () {
     $headers = Headers::withAuthorization(ApiKey::from('foo'));

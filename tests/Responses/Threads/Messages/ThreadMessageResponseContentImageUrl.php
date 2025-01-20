@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageUrl;
+use Webfox\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentImageUrl;
 
 test('from', function () {
     $result = ThreadMessageResponseContentImageUrl::from(threadMessageResource()['content'][2]['image_url']);

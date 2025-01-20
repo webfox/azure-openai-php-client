@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Concerns;
+namespace Webfox\OpenAI\Responses\Concerns;
 
 use BadMethodCallException;
 

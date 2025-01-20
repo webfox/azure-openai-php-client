@@ -1,11 +1,11 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseResponseFormat;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolFileSearch;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponseToolResources;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseResponseFormat;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseToolCodeInterpreter;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseToolFileSearch;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponseToolResources;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('from', function () {
     $result = AssistantResponse::from(assistantWithAllToolsResource(), meta());

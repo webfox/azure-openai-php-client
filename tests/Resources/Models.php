@@ -1,12 +1,12 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\Models\DeleteResponse;
-use Webfox\AzureOpenAI\Responses\Models\ListResponse;
-use Webfox\AzureOpenAI\Responses\Models\RetrieveResponse;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Models\DeleteResponse;
+use Webfox\OpenAI\Responses\Models\ListResponse;
+use Webfox\OpenAI\Responses\Models\RetrieveResponse;
 
 test('list', function () {
-    $client = mockClient('GET', 'models', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(modelList(), metaHeaders()));
+    $client = mockClient('GET', 'models', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(modelList(), metaHeaders()));
 
     $result = $client->models()->list();
 
@@ -24,7 +24,7 @@ test('list', function () {
 });
 
 test('retrieve', function () {
-    $client = mockClient('GET', 'models/da-vince', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(model(), metaHeaders()));
+    $client = mockClient('GET', 'models/da-vince', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(model(), metaHeaders()));
 
     $result = $client->models()->retrieve('da-vince');
 
@@ -40,7 +40,7 @@ test('retrieve', function () {
 });
 
 test('delete fine tuned model', function () {
-    $client = mockClient('DELETE', 'models/curie:ft-acmeco-2021-03-03-21-44-20', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fineTunedModelDeleteResource(), metaHeaders()));
+    $client = mockClient('DELETE', 'models/curie:ft-acmeco-2021-03-03-21-44-20', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fineTunedModelDeleteResource(), metaHeaders()));
 
     $result = $client->models()->delete('curie:ft-acmeco-2021-03-03-21-44-20');
 

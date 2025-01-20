@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webfox\AzureOpenAI\Responses\Embeddings;
+namespace Webfox\OpenAI\Responses\Embeddings;
 
 final class CreateResponseEmbedding
 {

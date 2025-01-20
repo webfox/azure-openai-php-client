@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Enums\FineTuning\FineTuningEventLevel;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponseEvent;
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponseEventData;
+use Webfox\OpenAI\Enums\FineTuning\FineTuningEventLevel;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponseEvent;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponseEventData;
 
 test('from message event', function () {
     $result = ListJobEventsResponseEvent::from(fineTuningJobMessageEventResource());

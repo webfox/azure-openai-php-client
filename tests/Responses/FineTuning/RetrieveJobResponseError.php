@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTuning\RetrieveJobResponseError;
+use Webfox\OpenAI\Responses\FineTuning\RetrieveJobResponseError;
 
 test('from', function () {
     $result = RetrieveJobResponseError::from(fineTuningFailedJobRetrieveResource()['error']);

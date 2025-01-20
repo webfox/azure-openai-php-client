@@ -2,15 +2,15 @@
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
-use Webfox\AzureOpenAI\Responses\FineTunes\ListEventsResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\ListResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponse;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseEvent;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseFile;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
-use Webfox\AzureOpenAI\Responses\StreamResponse;
+use Webfox\OpenAI\Responses\FineTunes\ListEventsResponse;
+use Webfox\OpenAI\Responses\FineTunes\ListResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponse;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseEvent;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseFile;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveStreamedResponseEvent;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\StreamResponse;
 
 test('create', function () {
     $client = mockClient('POST', 'fine-tunes', [
@@ -26,7 +26,7 @@ test('create', function () {
         'classification_positive_class' => null,
         'classification_betas' => [],
         'suffix' => null,
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fineTuneResource(), metaHeaders()));
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fineTuneResource(), metaHeaders()));
 
     $result = $client->fineTunes()->create([
         'training_file' => 'file-XjGxS3KTG0uNmNOK362iJua3',
@@ -68,7 +68,7 @@ test('create', function () {
 });
 
 test('list', function () {
-    $client = mockClient('GET', 'fine-tunes', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fineTuneListResource(), metaHeaders()));
+    $client = mockClient('GET', 'fine-tunes', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fineTuneListResource(), metaHeaders()));
 
     $result = $client->fineTunes()->list();
 
@@ -82,7 +82,7 @@ test('list', function () {
 });
 
 test('retrieve', function () {
-    $client = mockClient('GET', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fineTuneResource(), metaHeaders()));
+    $client = mockClient('GET', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fineTuneResource(), metaHeaders()));
 
     $result = $client->fineTunes()->retrieve('ft-AF1WoRqd3aJAHsqc9NY7iL8F');
 
@@ -134,7 +134,7 @@ test('retrieve', function () {
 });
 
 test('cancel', function () {
-    $client = mockClient('POST', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/cancel', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from([...fineTuneResource(), 'status' => 'cancelled'], metaHeaders()));
+    $client = mockClient('POST', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/cancel', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from([...fineTuneResource(), 'status' => 'cancelled'], metaHeaders()));
 
     $result = $client->fineTunes()->cancel('ft-AF1WoRqd3aJAHsqc9NY7iL8F');
 
@@ -163,7 +163,7 @@ test('cancel', function () {
 });
 
 test('list events', function () {
-    $client = mockClient('GET', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/events', [], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(fineTuneListEventsResource(), metaHeaders()));
+    $client = mockClient('GET', 'fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/events', [], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(fineTuneListEventsResource(), metaHeaders()));
 
     $result = $client->fineTunes()->listEvents('ft-AF1WoRqd3aJAHsqc9NY7iL8F');
 

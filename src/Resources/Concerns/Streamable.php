@@ -1,8 +1,8 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Resources\Concerns;
+namespace Webfox\OpenAI\Resources\Concerns;
 
-use Webfox\AzureOpenAI\Exceptions\InvalidArgumentException;
+use Webfox\OpenAI\Exceptions\InvalidArgumentException;
 
 trait Streamable
 {

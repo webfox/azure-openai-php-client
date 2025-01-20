@@ -1,8 +1,8 @@
 <?php
 
-use Webfox\AzureOpenAI\Resources\Batches;
-use Webfox\AzureOpenAI\Resources\Completions;
-use Webfox\AzureOpenAI\Resources\Models;
+use Webfox\OpenAI\Resources\Batches;
+use Webfox\OpenAI\Resources\Completions;
+use Webfox\OpenAI\Resources\Models;
 
 it('has models', function () {
     $openAI = OpenAI::client('foo');

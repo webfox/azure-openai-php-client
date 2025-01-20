@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Embeddings;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Embeddings;
 
 final class CreateResponseFixture
 {

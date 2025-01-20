@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponseEmbedding;
+use Webfox\OpenAI\Responses\Embeddings\CreateResponseEmbedding;
 
 test('from', function () {
     $result = CreateResponseEmbedding::from(embedding());

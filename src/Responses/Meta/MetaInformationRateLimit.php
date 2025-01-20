@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Responses\Meta;
+namespace Webfox\OpenAI\Responses\Meta;
 
 final class MetaInformationRateLimit
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Images;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Images;
 
 final class VariationResponseFixture
 {

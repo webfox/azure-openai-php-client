@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Audio\TranscriptionResponseWord;
+use Webfox\OpenAI\Responses\Audio\TranscriptionResponseWord;
 
 test('from', function () {
     $result = TranscriptionResponseWord::from(audioTranscriptionVerboseJson()['words'][0]);

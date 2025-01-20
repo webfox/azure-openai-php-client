@@ -1,10 +1,10 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Contracts\Resources;
+namespace Webfox\OpenAI\Contracts\Resources;
 
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantDeleteResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantListResponse;
-use Webfox\AzureOpenAI\Responses\Assistants\AssistantResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantDeleteResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantListResponse;
+use Webfox\OpenAI\Responses\Assistants\AssistantResponse;
 
 interface AssistantsContract
 {

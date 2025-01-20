@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Embeddings\CreateResponseUsage;
+use Webfox\OpenAI\Responses\Embeddings\CreateResponseUsage;
 
 test('from', function () {
     $result = CreateResponseUsage::from(embeddingList()['usage']);

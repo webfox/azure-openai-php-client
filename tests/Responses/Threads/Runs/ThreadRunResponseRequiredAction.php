@@ -1,7 +1,7 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredAction;
-use Webfox\AzureOpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredActionSubmitToolOutputs;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredAction;
+use Webfox\OpenAI\Responses\Threads\Runs\ThreadRunResponseRequiredActionSubmitToolOutputs;
 
 test('from', function () {
     $result = ThreadRunResponseRequiredAction::from(threadRunWithSubmitToolOutputsResource()['required_action']);

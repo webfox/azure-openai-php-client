@@ -1,6 +1,6 @@
 <?php
 
-namespace Webfox\AzureOpenAI\Testing\Responses\Fixtures\Files;
+namespace Webfox\OpenAI\Testing\Responses\Fixtures\Files;
 
 final class ListResponseFixture
 {

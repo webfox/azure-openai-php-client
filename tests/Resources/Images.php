@@ -1,12 +1,12 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\Images\CreateResponse;
-use Webfox\AzureOpenAI\Responses\Images\CreateResponseData;
-use Webfox\AzureOpenAI\Responses\Images\EditResponse;
-use Webfox\AzureOpenAI\Responses\Images\EditResponseData;
-use Webfox\AzureOpenAI\Responses\Images\VariationResponse;
-use Webfox\AzureOpenAI\Responses\Images\VariationResponseData;
-use Webfox\AzureOpenAI\Responses\Meta\MetaInformation;
+use Webfox\OpenAI\Responses\Images\CreateResponse;
+use Webfox\OpenAI\Responses\Images\CreateResponseData;
+use Webfox\OpenAI\Responses\Images\EditResponse;
+use Webfox\OpenAI\Responses\Images\EditResponseData;
+use Webfox\OpenAI\Responses\Images\VariationResponse;
+use Webfox\OpenAI\Responses\Images\VariationResponseData;
+use Webfox\OpenAI\Responses\Meta\MetaInformation;
 
 test('create', function () {
     $client = mockClient('POST', 'images/generations', [
@@ -14,7 +14,7 @@ test('create', function () {
         'n' => 1,
         'size' => '256x256',
         'response_format' => 'url',
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(imageCreateWithUrl(), metaHeaders()));
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(imageCreateWithUrl(), metaHeaders()));
 
     $result = $client->images()->create([
         'prompt' => 'A cute baby sea otter',
@@ -44,7 +44,7 @@ test('edit', function () {
         'n' => 1,
         'size' => '256x256',
         'response_format' => 'url',
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(imageEditWithUrl(), metaHeaders()), validateParams: false);
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(imageEditWithUrl(), metaHeaders()), validateParams: false);
 
     $result = $client->images()->edit([
         'image' => fileResourceResource(),
@@ -74,7 +74,7 @@ test('variation', function () {
         'n' => 1,
         'size' => '256x256',
         'response_format' => 'url',
-    ], \Webfox\AzureOpenAI\ValueObjects\Transporter\Response::from(imageVariationWithUrl(), metaHeaders()), validateParams: false);
+    ], \Webfox\OpenAI\ValueObjects\Transporter\Response::from(imageVariationWithUrl(), metaHeaders()), validateParams: false);
 
     $result = $client->images()->variation([
         'image' => fileResourceResource(),

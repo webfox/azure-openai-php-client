@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTuning\ListJobEventsResponseEventData;
+use Webfox\OpenAI\Responses\FineTuning\ListJobEventsResponseEventData;
 
 test('from', function () {
     $result = ListJobEventsResponseEventData::from(fineTuningJobMetricsEventResource()['data']);

@@ -1,6 +1,6 @@
 <?php
 
-use Webfox\AzureOpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
+use Webfox\OpenAI\Responses\FineTunes\RetrieveResponseHyperparams;
 
 test('from', function () {
     $result = RetrieveResponseHyperparams::from(fineTuneResource()['hyperparams']);
